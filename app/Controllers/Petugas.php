@@ -1,20 +1,19 @@
 <?php
-
 namespace App\Controllers;
 use App\Models\PetugasModel;
 
 class Petugas extends BaseController
 {
-    protected $petugas;
+    protected $model;
 
     public function __construct()
     {
-        $this->petugas = new PetugasModel();
+        $this->model = new PetugasModel();
     }
 
     public function index()
     {
-        $data['petugas'] = $this->petugas->findAll();
+        $data['petugas'] = $this->model->findAll();
         return view('petugas/index', $data);
     }
 
@@ -25,31 +24,30 @@ class Petugas extends BaseController
 
     public function store()
     {
-        $this->petugas->save([
-            'nama_petugas' => $this->request->getPost('nama_petugas')
+        $this->model->insert([
+            'id_petugas'   => $this->request->getPost('id_petugas'),
+            'nama_petugas' => $this->request->getPost('nama_petugas'),
         ]);
-
-        return redirect()->to('/petugas');
+        return redirect()->to(base_url('petugas'));
     }
 
     public function edit($id)
     {
-        $data['petugas'] = $this->petugas->find($id);
+        $data['petugas'] = $this->model->find($id);
         return view('petugas/form', $data);
     }
 
     public function update($id)
     {
-        $this->petugas->update($id, [
-            'nama_petugas' => $this->request->getPost('nama_petugas')
+        $this->model->update($id, [
+            'nama_petugas' => $this->request->getPost('nama_petugas'),
         ]);
-
-        return redirect()->to('/petugas');
+        return redirect()->to(base_url('petugas'));
     }
 
     public function delete($id)
     {
-        $this->petugas->delete($id);
-        return redirect()->to('/petugas');
+        $this->model->delete($id);
+        return redirect()->to(base_url('petugas'));
     }
 }
