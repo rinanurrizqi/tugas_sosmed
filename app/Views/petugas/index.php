@@ -19,7 +19,7 @@
             Daftar Petugas
         </h3>
         
-        <!-- TOMBOL TAMBAH DENGAN HOVER -->
+        <!-- Tombol Tambah Petugas -->
         <a href="<?= base_url('petugas/create') ?>" class="btn-tambah">
             <i class="fas fa-plus"></i>
             Tambah Petugas
@@ -32,26 +32,28 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>ID</th>
+                    <th>ID Petugas</th>
                     <th>Nama Petugas</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
                 <?php if (!empty($petugas) && is_array($petugas)): ?>
+                    <?php $no = 1; ?>
                     <?php foreach ($petugas as $p): ?>
                     <tr>
-                        <td><strong><?= $p['id_petugas'] ?></strong></td>
+                        <td><strong><?= $no++ ?></strong></td>
+                        <td><?= $p['id_petugas'] ?></td>
                         <td><?= $p['nama_petugas'] ?></td>
                         <td>
                             <div class="action-buttons">
-                                <!-- TOMBOL EDIT DENGAN HOVER -->
+                                <!-- Tombol Edit -->
                                 <a href="<?= base_url('petugas/edit/'.$p['id_petugas']) ?>" class="btn-edit">
                                     <i class="fas fa-edit"></i>
                                     Edit
                                 </a>
                                 
-                                <!-- TOMBOL HAPUS DENGAN HOVER -->
+                                <!-- Tombol Hapus -->
                                 <a href="<?= base_url('petugas/delete/'.$p['id_petugas']) ?>" 
                                    class="btn-hapus"
                                    onclick="return confirm('Yakin ingin menghapus data ini?')">
@@ -64,7 +66,7 @@
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="3" style="text-align: center; padding: 40px; color: #64748b;">
+                        <td colspan="4" style="text-align: center; padding: 40px; color: #64748b;">
                             <i class="fas fa-users-slash" style="font-size: 32px; display: block; margin-bottom: 10px;"></i>
                             Belum ada data petugas
                         </td>
@@ -74,6 +76,7 @@
         </table>
     </div>
 </div>
+
 
 <style>
 /* ===== TOMBOL TAMBAH ===== */

@@ -32,16 +32,18 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>ID</th>
+                    <th>ID Instagram</th>
                     <th>Link Instagram</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
                 <?php if (!empty($instagram) && is_array($instagram)): ?>
+                    <?php $no = 1; ?>
                     <?php foreach ($instagram as $ig): ?>
                     <tr>
-                        <td><strong><?= $ig['id_instagram'] ?></strong></td>
+                        <td><strong><?= $no++ ?></strong></td>
+                        <td><?= $ig['id_instagram'] ?></td>
                         <td>
                             <a href="<?= $ig['link_instagram'] ?>" target="_blank" style="color: #3b82f6; text-decoration: none;">
                                 <i class="fab fa-instagram" style="margin-right: 5px;"></i>
@@ -69,7 +71,7 @@
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="3" style="text-align: center; padding: 40px; color: #64748b;">
+                        <td colspan="4" style="text-align: center; padding: 40px; color: #64748b;">
                             <i class="fab fa-instagram" style="font-size: 32px; display: block; margin-bottom: 10px;"></i>
                             Belum ada data akun Instagram
                         </td>

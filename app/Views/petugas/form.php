@@ -8,7 +8,25 @@
 
 <!-- Form Container -->
 <div class="form-container" style="max-width: 500px; margin: 20px auto; background: white; border-radius: 30px; padding: 35px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
-    <form method="post" action="<?= isset($petugas) ? '/petugas/update/'.$petugas['id_petugas'] : '/petugas/store' ?>">
+    <form method="post" action="<?= isset($petugas) ? base_url('petugas/update/'.$petugas['id_petugas']) : base_url('petugas/store') ?>">
+        
+        <!-- Input ID Petugas (Manual karena tidak auto increment) -->
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 10px; font-weight: 600; color: #0f172a;">
+                ID Petugas
+            </label>
+            <input type="text" 
+                   name="id_petugas"
+                   style="width: 100%; padding: 16px 20px; border: 2px solid #e2e8f0; border-radius: 50px; font-size: 15px; transition: all 0.3s ease; outline: none; box-sizing: border-box;"
+                   value="<?= $petugas['id_petugas'] ?? '' ?>"
+                   placeholder="Contoh: P001"
+                   <?= isset($petugas) ? 'readonly' : '' ?>
+                   onmouseover="this.style.borderColor='#60a5fa'; this.style.transform='translateY(-2px)'"
+                   onmouseout="this.style.borderColor='#e2e8f0'; this.style.transform='translateY(0)'"
+                   onfocus="this.style.borderColor='#3b82f6'; this.style.boxShadow='0 0 0 4px rgba(59,130,246,0.15)'; this.style.transform='translateY(-2px)'"
+                   onblur="this.style.borderColor='#e2e8f0'; this.style.boxShadow='none'; this.style.transform='translateY(0)'"
+                   required>
+        </div>
         
         <!-- Input Nama Petugas -->
         <div style="margin-bottom: 30px;">
@@ -19,6 +37,7 @@
                    name="nama_petugas"
                    style="width: 100%; padding: 16px 20px; border: 2px solid #e2e8f0; border-radius: 50px; font-size: 15px; transition: all 0.3s ease; outline: none; box-sizing: border-box;"
                    value="<?= $petugas['nama_petugas'] ?? '' ?>"
+                   placeholder="Masukkan nama petugas"
                    onmouseover="this.style.borderColor='#60a5fa'; this.style.transform='translateY(-2px)'"
                    onmouseout="this.style.borderColor='#e2e8f0'; this.style.transform='translateY(0)'"
                    onfocus="this.style.borderColor='#3b82f6'; this.style.boxShadow='0 0 0 4px rgba(59,130,246,0.15)'; this.style.transform='translateY(-2px)'"
@@ -26,20 +45,15 @@
                    required>
         </div>
 
-        <!-- Hidden ID untuk Edit -->
-        <?php if (isset($petugas)): ?>
-            <input type="hidden" name="id_petugas" value="<?= $petugas['id_petugas'] ?>">
-        <?php endif; ?>
-
-        <!-- Form Actions dengan JARAK LEBAR -->
+        <!-- Form Actions -->
         <div class="form-action-buttons" style="display: flex; gap: 30px; margin-top: 35px; justify-content: center;">
             <!-- Tombol Simpan -->
             <button type="submit" class="btn-simpan" style="padding: 16px 40px; border: none; border-radius: 60px; font-weight: 600; font-size: 16px; cursor: pointer; background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; box-shadow: 0 8px 20px rgba(59, 130, 246, 0.5); min-width: 150px; transition: all 0.3s ease; position: relative; overflow: hidden;">
                 <span style="position: relative; z-index: 2;">Simpan</span>
             </button>
             
-            <!-- Tombol Kembali dengan Border -->
-            <a href="/petugas" class="btn-kembali" style="padding: 16px 40px; border: 2px solid #e2e8f0; border-radius: 60px; font-weight: 600; font-size: 16px; cursor: pointer; background: white; color: #64748b; text-decoration: none; display: inline-block; text-align: center; min-width: 150px; transition: all 0.3s ease; position: relative; overflow: hidden;">
+            <!-- Tombol Kembali -->
+            <a href="<?= base_url('petugas') ?>" class="btn-kembali" style="padding: 16px 40px; border: 2px solid #e2e8f0; border-radius: 60px; font-weight: 600; font-size: 16px; cursor: pointer; background: white; color: #64748b; text-decoration: none; display: inline-block; text-align: center; min-width: 150px; transition: all 0.3s ease; position: relative; overflow: hidden;">
                 <span style="position: relative; z-index: 2;">Kembali</span>
             </a>
         </div>
