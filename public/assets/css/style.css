@@ -43,18 +43,49 @@ html, body {
     position: relative;
 }
 
-/* ===== SIDEBAR ===== */
+/* ===== LAYOUT UTAMA - PERBAIKAN ===== */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* MATIKAN SCROLL DI LEVEL HTML/BODY */
+}
+
+.admin {
+    display: flex;
+    height: 100vh; /* GUNAKAN HEIGHT TETAP */
+    width: 100%;
+    overflow: hidden; /* MATIKAN SCROLL DI LEVEL ADMIN */
+}
+
+/* ===== CONTENT AREA - SCROLL DI SINI ===== */
+.content {
+    flex: 1;
+    height: 100vh;
+    overflow-y: auto; /* SCROLL VERTIKAL */
+    overflow-x: auto; /* SCROLL HORIZONTAL */
+    padding: 30px 35px;
+    background: #f8fafc;
+}
+
+/* ===== SIDEBAR - VERSI PERBAIKAN ===== */
 .sidebar {
     width: 280px;
-    min-height: 100vh;
+    min-width: 280px; /* PAKSA LEBAR MINIMUM */
+    max-width: 280px; /* PAKSA LEBAR MAKSIMUM */
+    height: 100vh;
     background: linear-gradient(195deg, #1e293b 0%, #0f172a 100%);
     color: #e2e8f0;
     padding: 28px 20px;
     position: sticky;
     top: 0;
-    height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden; /* SEMBUNYIKAN SCROLL HORIZONTAL */
     box-shadow: 4px 0 20px rgba(0, 0, 0, 0.08);
+    flex-shrink: 0; /* CEGAH SIDEBAR MENYUSUT */
+    flex-grow: 0; /* CEGAH SIDEBAR MEMBESAR */
+    z-index: 10;
 }
 
 .sidebar-logo {
