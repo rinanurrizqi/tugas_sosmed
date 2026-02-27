@@ -12,9 +12,10 @@
 <table width="100%">
 <thead>
 <tr>
-<th>ID</th>
-<th>Email</th>
-<th>Aksi</th>
+    <th>No</th>
+    <th>ID</th>
+    <th>Email</th>
+    <th>Aksi</th>
 </tr>
 </thead>
 <tbody>

@@ -31,6 +31,7 @@
         <table>
             <thead>
                 <tr>
+                    <th>No</th>
                     <th>Hari</th>
                     <th>Jam</th>
                     <th>ID Petugas</th>

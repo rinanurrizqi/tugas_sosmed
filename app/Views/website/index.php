@@ -9,6 +9,7 @@
 <table width="100%">
 <thead>
 <tr>
+<th>No</th>
 <th>ID</th>
 <th>Link Website</th>
 <th>Aksi</th>

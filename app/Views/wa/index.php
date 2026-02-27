@@ -12,6 +12,7 @@
 <table width="100%">
 <thead>
 <tr>
+<th>No</th>
 <th>ID</th>
 <th>Nomor WhatsApp</th>
 <th>Aksi</th>

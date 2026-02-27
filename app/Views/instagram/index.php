@@ -31,6 +31,7 @@
         <table>
             <thead>
                 <tr>
+                    <th>No</th>
                     <th>ID</th>
                     <th>Link Instagram</th>
                     <th>Aksi</th>
