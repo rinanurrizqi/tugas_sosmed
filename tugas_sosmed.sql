@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Feb 2026 pada 02.31
+-- Waktu pembuatan: 28 Feb 2026 pada 03.24
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -100,11 +100,7 @@ CREATE TABLE `data_petugas` (
 --
 
 INSERT INTO `data_petugas` (`id_petugas`, `nama_petugas`) VALUES
-('P001', 'rina'),
-('P002', 'wifna'),
-('P003', 'isna'),
-('P004', 'aprilia'),
-('P005', 'syaiba');
+('P001', 'rina');
 
 -- --------------------------------------------------------
 

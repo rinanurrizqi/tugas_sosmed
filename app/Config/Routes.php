@@ -28,7 +28,8 @@ $routes->get('petugas/create',             'Petugas::create');
 $routes->post('petugas/store',             'Petugas::store');
 $routes->get('petugas/edit/(:segment)',    'Petugas::edit/$1');
 $routes->post('petugas/update/(:segment)', 'Petugas::update/$1');
-$routes->get('petugas/delete/(:segment)',  'Petugas::delete/$1');
+$routes->post('petugas/delete/(:segment)', 'Petugas::delete/$1');  // UBAH JADI POST
+// $routes->get('petugas/delete/(:segment)',  'Petugas::delete/$1'); // HAPUS ATAU KOMENTARI YANG GET
 
 // MASTER - INSTAGRAM
 $routes->get('/instagram', 'Instagram::index');

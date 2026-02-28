@@ -6,19 +6,34 @@
     <h2><?= isset($petugas) ? 'Edit Petugas' : 'Tambah Petugas' ?></h2>
 </div>
 
+<!-- Tampilkan Error Validation -->
+<?php if (session()->getFlashdata('errors')): ?>
+    <div style="background: #f8d7da; color: #721c24; padding: 15px 20px; border-radius: 10px; margin-bottom: 20px; border: 1px solid #f5c6cb;">
+        <ul style="margin-left: 20px;">
+            <?php foreach (session()->getFlashdata('errors') as $error): ?>
+                <li><?= $error ?></li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+<?php endif; ?>
+
 <!-- Form Container -->
 <div class="form-container" style="max-width: 500px; margin: 20px auto; background: white; border-radius: 30px; padding: 35px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
+    
     <form method="post" action="<?= isset($petugas) ? base_url('petugas/update/'.$petugas['id_petugas']) : base_url('petugas/store') ?>">
+        
+        <!-- CSRF Protection - WAJIB ADA! -->
+        <?= csrf_field() ?>
         
         <!-- Input ID Petugas (Manual karena tidak auto increment) -->
         <div style="margin-bottom: 20px;">
             <label style="display: block; margin-bottom: 10px; font-weight: 600; color: #0f172a;">
-                ID Petugas
+                ID Petugas <span style="color: #ef4444;">*</span>
             </label>
             <input type="text" 
                    name="id_petugas"
                    style="width: 100%; padding: 16px 20px; border: 2px solid #e2e8f0; border-radius: 50px; font-size: 15px; transition: all 0.3s ease; outline: none; box-sizing: border-box;"
-                   value="<?= $petugas['id_petugas'] ?? '' ?>"
+                   value="<?= old('id_petugas', $petugas['id_petugas'] ?? '') ?>"
                    placeholder="Contoh: P001"
                    <?= isset($petugas) ? 'readonly' : '' ?>
                    onmouseover="this.style.borderColor='#60a5fa'; this.style.transform='translateY(-2px)'"
@@ -26,17 +41,23 @@
                    onfocus="this.style.borderColor='#3b82f6'; this.style.boxShadow='0 0 0 4px rgba(59,130,246,0.15)'; this.style.transform='translateY(-2px)'"
                    onblur="this.style.borderColor='#e2e8f0'; this.style.boxShadow='none'; this.style.transform='translateY(0)'"
                    required>
+            <?php if (!isset($petugas)): ?>
+                <div style="font-size: 12px; color: #64748b; margin-top: 5px; margin-left: 5px;">
+                    <i class="fas fa-info-circle" style="color: #3b82f6;"></i>
+                    ID bersifat unik dan tidak bisa diubah setelah dibuat
+                </div>
+            <?php endif; ?>
         </div>
         
         <!-- Input Nama Petugas -->
         <div style="margin-bottom: 30px;">
             <label style="display: block; margin-bottom: 10px; font-weight: 600; color: #0f172a;">
-                Nama Petugas
+                Nama Petugas <span style="color: #ef4444;">*</span>
             </label>
             <input type="text" 
                    name="nama_petugas"
                    style="width: 100%; padding: 16px 20px; border: 2px solid #e2e8f0; border-radius: 50px; font-size: 15px; transition: all 0.3s ease; outline: none; box-sizing: border-box;"
-                   value="<?= $petugas['nama_petugas'] ?? '' ?>"
+                   value="<?= old('nama_petugas', $petugas['nama_petugas'] ?? '') ?>"
                    placeholder="Masukkan nama petugas"
                    onmouseover="this.style.borderColor='#60a5fa'; this.style.transform='translateY(-2px)'"
                    onmouseout="this.style.borderColor='#e2e8f0'; this.style.transform='translateY(0)'"
@@ -49,11 +70,13 @@
         <div class="form-action-buttons" style="display: flex; gap: 30px; margin-top: 35px; justify-content: center;">
             <!-- Tombol Simpan -->
             <button type="submit" class="btn-simpan" style="padding: 16px 40px; border: none; border-radius: 60px; font-weight: 600; font-size: 16px; cursor: pointer; background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; box-shadow: 0 8px 20px rgba(59, 130, 246, 0.5); min-width: 150px; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                <i class="fas fa-save"></i>
                 <span style="position: relative; z-index: 2;">Simpan</span>
             </button>
             
             <!-- Tombol Kembali -->
             <a href="<?= base_url('petugas') ?>" class="btn-kembali" style="padding: 16px 40px; border: 2px solid #e2e8f0; border-radius: 60px; font-weight: 600; font-size: 16px; cursor: pointer; background: white; color: #64748b; text-decoration: none; display: inline-block; text-align: center; min-width: 150px; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                <i class="fas fa-arrow-left"></i>
                 <span style="position: relative; z-index: 2;">Kembali</span>
             </a>
         </div>
@@ -136,6 +159,10 @@ input:focus {
 .btn-kembali:hover:before {
     width: 400px;
     height: 400px;
+}
+
+.btn-kembali:hover i {
+    transform: translateX(-3px);
 }
 
 /* ===== RESPONSIVE ===== */
