@@ -46,7 +46,7 @@ $routes->get('facebook/create',             'Facebook::create');
 $routes->post('facebook/store',             'Facebook::store');
 $routes->get('facebook/edit/(:segment)',    'Facebook::edit/$1');
 $routes->post('facebook/update/(:segment)', 'Facebook::update/$1');
-$routes->get('facebook/delete/(:segment)',  'Facebook::delete/$1');
+$routes->post('facebook/delete/(:segment)', 'Facebook::delete/$1');
 
 // MASTER - TIKTOK
 $routes->get('tiktok',                    'Tiktok::index');
