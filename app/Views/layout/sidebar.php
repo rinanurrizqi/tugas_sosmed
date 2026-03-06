@@ -19,8 +19,4 @@
     <a href="<?= base_url('transaksi/jadwal') ?>">Penjadwalan Tugas</a>
     <a href="<?= base_url('transaksi/progress') ?>">Progress Harian</a>
 
-    <div class="sidebar-section">LAPORAN</div>
-    <a href="#">Laporan Progress</a>
-    <a href="#">Rekap Petugas</a>
-
 </aside>
