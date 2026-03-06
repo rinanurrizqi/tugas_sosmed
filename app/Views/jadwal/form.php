@@ -10,8 +10,26 @@
 <div class="form-container" style="max-width: 800px; margin: 20px auto; background: white; border-radius: 30px; padding: 35px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
     <form method="post" action="<?= isset($jadwal) ? base_url('transaksi/jadwal/update/'.$jadwal['id_jadwal']) : base_url('transaksi/jadwal/store') ?>">
         
+        <!-- Input ID Jadwal (Manual karena tidak auto increment) -->
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 10px; font-weight: 600; color: #0f172a;">
+                ID Jadwal
+            </label>
+            <input type="text" 
+                   name="id_jadwal"
+                   style="width: 100%; padding: 16px 20px; border: 2px solid #e2e8f0; border-radius: 50px; font-size: 15px; transition: all 0.3s ease; outline: none; box-sizing: border-box;"
+                   value="<?= $jadwal['id_jadwal'] ?? '' ?>"
+                   placeholder="Contoh: J001"
+                   <?= isset($jadwal) ? 'readonly' : '' ?>
+                   onmouseover="this.style.borderColor='#60a5fa'; this.style.transform='translateY(-2px)'"
+                   onmouseout="this.style.borderColor='#e2e8f0'; this.style.transform='translateY(0)'"
+                   onfocus="this.style.borderColor='#3b82f6'; this.style.boxShadow='0 0 0 4px rgba(59,130,246,0.15)'; this.style.transform='translateY(-2px)'"
+                   onblur="this.style.borderColor='#e2e8f0'; this.style.boxShadow='none'; this.style.transform='translateY(0)'"
+                   required>
+        </div>
+        
         <!-- Baris 1: Hari dan Jam -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
             <!-- Hari -->
             <div>
                 <label style="display: block; margin-bottom: 10px; font-weight: 600; color: #0f172a;">
@@ -53,7 +71,7 @@
         </div>
 
         <!-- ID Petugas -->
-        <div style="margin-bottom: 30px;">
+        <div style="margin-bottom: 20px;">
             <label style="display: block; margin-bottom: 10px; font-weight: 600; color: #0f172a;">
                 ID Petugas
             </label>
@@ -163,12 +181,7 @@
             </div>
         </div>
 
-        <!-- Hidden ID untuk Edit -->
-        <?php if (isset($jadwal)): ?>
-            <input type="hidden" name="id_jadwal" value="<?= $jadwal['id_jadwal'] ?>">
-        <?php endif; ?>
-
-        <!-- Form Actions dengan JARAK LEBAR -->
+        <!-- Form Actions -->
         <div class="form-action-buttons" style="display: flex; gap: 30px; margin-top: 35px; justify-content: center;">
             <!-- Tombol Simpan -->
             <button type="submit" class="btn-simpan" style="padding: 16px 40px; border: none; border-radius: 60px; font-weight: 600; font-size: 16px; cursor: pointer; background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; box-shadow: 0 8px 20px rgba(59, 130, 246, 0.5); min-width: 150px; transition: all 0.3s ease; position: relative; overflow: hidden;">

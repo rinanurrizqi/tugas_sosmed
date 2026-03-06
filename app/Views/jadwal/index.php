@@ -26,12 +26,13 @@
         </a>
     </div>
 
-    <!-- Table Container -->
-    <div class="table-container">
-        <table>
+    <!-- Table Container dengan scroll -->
+    <div class="table-container" style="overflow-x: auto; width: 100%;">
+        <table style="min-width: 1300px;">
             <thead>
                 <tr>
                     <th>No</th>
+                    <th>ID Jadwal</th>
                     <th>Hari</th>
                     <th>Jam</th>
                     <th>ID Petugas</th>
@@ -46,9 +47,12 @@
             </thead>
             <tbody>
                 <?php if (!empty($jadwal) && is_array($jadwal)): ?>
+                    <?php $no = 1; ?>
                     <?php foreach ($jadwal as $j): ?>
                     <tr>
-                        <td><strong><?= $j['hari_jadwal'] ?></strong></td>
+                        <td><strong><?= $no++ ?></strong></td>
+                        <td><?= $j['id_jadwal'] ?></td>
+                        <td><?= $j['hari_jadwal'] ?></td>
                         <td><?= $j['jam_jadwal'] ?></td>
                         <td><?= $j['id_petugas'] ?></td>
                         <td><?= $j['detail_tugas_insta'] ?></td>
@@ -72,7 +76,7 @@
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="10" style="text-align: center; padding: 40px; color: #64748b;">
+                        <td colspan="12" style="text-align: center; padding: 40px; color: #64748b;">
                             <i class="fas fa-calendar-times" style="font-size: 32px; display: block; margin-bottom: 10px;"></i>
                             Belum ada jadwal tugas
                         </td>

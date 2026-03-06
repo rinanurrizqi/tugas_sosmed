@@ -10,6 +10,19 @@
     </div>
 </div>
 
+<!-- Tampilkan Flash Messages -->
+<?php if (session()->getFlashdata('success')): ?>
+    <div style="background: #d4edda; color: #155724; padding: 15px 20px; border-radius: 10px; margin-bottom: 20px;">
+        <i class="fas fa-check-circle"></i> <?= session()->getFlashdata('success') ?>
+    </div>
+<?php endif; ?>
+
+<?php if (session()->getFlashdata('error')): ?>
+    <div style="background: #f8d7da; color: #721c24; padding: 15px 20px; border-radius: 10px; margin-bottom: 20px;">
+        <i class="fas fa-exclamation-circle"></i> <?= session()->getFlashdata('error') ?>
+    </div>
+<?php endif; ?>
+
 <!-- Section Data Instagram -->
 <div class="data-akun-section">
     <!-- Header dengan Tombol Tambah -->
@@ -39,9 +52,11 @@
             </thead>
             <tbody>
                 <?php if (!empty($instagram) && is_array($instagram)): ?>
+                    <?php $no = 1; ?>
                     <?php foreach ($instagram as $ig): ?>
                     <tr>
-                        <td><strong><?= $ig['id_instagram'] ?></strong></td>
+                        <td><strong><?= $no++ ?></strong></td> <!-- INI YANG DIPERBAIKI -->
+                        <td><?= $ig['id_instagram'] ?></td> <!-- INI YANG DIPERBAIKI -->
                         <td>
                             <a href="<?= $ig['link_instagram'] ?>" target="_blank" style="color: #3b82f6; text-decoration: none;">
                                 <i class="fab fa-instagram" style="margin-right: 5px;"></i>
@@ -56,20 +71,21 @@
                                     Edit
                                 </a>
                                 
-                                <!-- Tombol Hapus -->
-                                <a href="<?= base_url('instagram/delete/'.$ig['id_instagram']) ?>" 
-                                   class="btn-hapus"
-                                   onclick="return confirm('Yakin ingin menghapus data ini?')">
-                                    <i class="fas fa-trash"></i>
-                                    Hapus
-                                </a>
+                                <!-- Tombol Hapus - Ubah menjadi form POST -->
+                                <form action="<?= base_url('instagram/delete/'.$ig['id_instagram']) ?>" method="post" style="display: inline;" onsubmit="return confirm('Yakin ingin menghapus data ini?')">
+                                    <?= csrf_field() ?>
+                                    <button type="submit" class="btn-hapus">
+                                        <i class="fas fa-trash"></i>
+                                        Hapus
+                                    </button>
+                                </form>
                             </div>
                         </td>
                     </tr>
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="3" style="text-align: center; padding: 40px; color: #64748b;">
+                        <td colspan="4" style="text-align: center; padding: 40px; color: #64748b;">
                             <i class="fab fa-instagram" style="font-size: 32px; display: block; margin-bottom: 10px;"></i>
                             Belum ada data akun Instagram
                         </td>

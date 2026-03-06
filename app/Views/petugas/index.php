@@ -10,6 +10,19 @@
     </div>
 </div>
 
+<!-- Tampilkan Flash Messages -->
+<?php if (session()->getFlashdata('success')): ?>
+    <div style="background: #d4edda; color: #155724; padding: 15px 20px; border-radius: 10px; margin-bottom: 20px; border: 1px solid #c3e6cb;">
+        <i class="fas fa-check-circle"></i> <?= session()->getFlashdata('success') ?>
+    </div>
+<?php endif; ?>
+
+<?php if (session()->getFlashdata('error')): ?>
+    <div style="background: #f8d7da; color: #721c24; padding: 15px 20px; border-radius: 10px; margin-bottom: 20px; border: 1px solid #f5c6cb;">
+        <i class="fas fa-exclamation-circle"></i> <?= session()->getFlashdata('error') ?>
+    </div>
+<?php endif; ?>
+
 <!-- Section Data Petugas -->
 <div class="data-akun-section">
     <!-- Header dengan Tombol Tambah -->
@@ -19,7 +32,7 @@
             Daftar Petugas
         </h3>
         
-        <!-- TOMBOL TAMBAH DENGAN HOVER -->
+        <!-- Tombol Tambah Petugas -->
         <a href="<?= base_url('petugas/create') ?>" class="btn-tambah">
             <i class="fas fa-plus"></i>
             Tambah Petugas
@@ -32,39 +45,42 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>ID</th>
+                    <th>ID Petugas</th>
                     <th>Nama Petugas</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
                 <?php if (!empty($petugas) && is_array($petugas)): ?>
+                    <?php $no = 1; ?>
                     <?php foreach ($petugas as $p): ?>
                     <tr>
-                        <td><strong><?= $p['id_petugas'] ?></strong></td>
-                        <td><?= $p['nama_petugas'] ?></td>
+                        <td><strong><?= $no++ ?></strong></td>
+                        <td><?= esc($p['id_petugas']) ?></td>
+                        <td><?= esc($p['nama_petugas']) ?></td>
                         <td>
                             <div class="action-buttons">
-                                <!-- TOMBOL EDIT DENGAN HOVER -->
+                                <!-- Tombol Edit -->
                                 <a href="<?= base_url('petugas/edit/'.$p['id_petugas']) ?>" class="btn-edit">
                                     <i class="fas fa-edit"></i>
                                     Edit
                                 </a>
                                 
-                                <!-- TOMBOL HAPUS DENGAN HOVER -->
-                                <a href="<?= base_url('petugas/delete/'.$p['id_petugas']) ?>" 
-                                   class="btn-hapus"
-                                   onclick="return confirm('Yakin ingin menghapus data ini?')">
-                                    <i class="fas fa-trash"></i>
-                                    Hapus
-                                </a>
+                                <!-- Tombol Hapus dengan Form POST -->
+                                <form action="<?= base_url('petugas/delete/'.$p['id_petugas']) ?>" method="post" style="display: inline;" onsubmit="return confirm('Yakin ingin menghapus data ini?')">
+                                    <?= csrf_field() ?>
+                                    <button type="submit" class="btn-hapus">
+                                        <i class="fas fa-trash"></i>
+                                        Hapus
+                                    </button>
+                                </form>
                             </div>
                         </td>
                     </tr>
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="3" style="text-align: center; padding: 40px; color: #64748b;">
+                        <td colspan="4" style="text-align: center; padding: 40px; color: #64748b;">
                             <i class="fas fa-users-slash" style="font-size: 32px; display: block; margin-bottom: 10px;"></i>
                             Belum ada data petugas
                         </td>
