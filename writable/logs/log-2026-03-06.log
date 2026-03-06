@@ -1,0 +1,2025 @@
+ERROR - 2026-03-06 04:09:19 --> Table 'tugas_sosmed.akun_email' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `akun_email`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `akun_email`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `akun_email`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 04:09:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
+[Method: GET, Route: email]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 04:09:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `akun_email`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `akun_email`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 04:09:19 --> [Caused by] mysqli_sql_exception: Table 'tugas_sosmed.akun_email' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `akun_email`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `akun_email`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `akun_email`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 07:51:51 --> Table 'tugas_sosmed.akun_website' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `akun_website`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `akun_website`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `akun_website`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_website`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Website.php(17): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Website->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Website))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 07:51:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_website' doesn't exist
+[Method: GET, Route: website]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_website`', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Website.php(17): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Website->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Website))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 07:51:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_website' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `akun_website`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `akun_website`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_website`', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Website.php(17): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Website->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Website))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 07:51:51 --> [Caused by] mysqli_sql_exception: Table 'tugas_sosmed.akun_website' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `akun_website`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `akun_website`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `akun_website`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_website`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Website.php(17): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Website->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Website))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 08:56:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(20): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 08:56:51 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JadwalModel.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Jadwal.php(20): App\Models\JadwalModel->getJadwalWithPetugas()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 08:56:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\JadwalModel.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Jadwal.php(20): App\Models\JadwalModel->getJadwalWithPetugas()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 08:56:51 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(20): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 08:56:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(20): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 08:56:57 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JadwalModel.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Jadwal.php(20): App\Models\JadwalModel->getJadwalWithPetugas()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 08:56:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\JadwalModel.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Jadwal.php(20): App\Models\JadwalModel->getJadwalWithPetugas()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 08:56:57 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(20): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 08:57:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(20): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 08:57:34 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JadwalModel.php(31): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Jadwal.php(20): App\Models\JadwalModel->getJadwalWithPetugas()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 08:57:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\JadwalModel.php(31): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Jadwal.php(20): App\Models\JadwalModel->getJadwalWithPetugas()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 08:57:34 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(31): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(20): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 13:51:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 13:51:54 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 13:51:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 13:51:54 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 13:56:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 13:56:10 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 13:56:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 13:56:10 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 14:08:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:08:17 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:08:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:08:17 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 14:08:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:08:22 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:08:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:08:22 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 14:08:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:08:45 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:08:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:08:45 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 14:08:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:08:51 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:08:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:08:51 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 14:17:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:17:43 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:17:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:17:43 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 14:18:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:18:28 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:18:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:18:28 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 14:19:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:19:35 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:19:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:19:35 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(38): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 14:24:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(23): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:24:38 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Jadwal.php(23): App\Models\JadwalModel->getJadwalWithPetugas()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:24:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Jadwal.php(23): App\Models\JadwalModel->getJadwalWithPetugas()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:24:38 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(23): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 14:35:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(22): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:35:26 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Jadwal.php(22): App\Models\JadwalModel->getJadwalWithPetugas()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:35:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Jadwal.php(22): App\Models\JadwalModel->getJadwalWithPetugas()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:35:26 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(22): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 14:40:59 --> Table 'tugas_sosmed.akun_website' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT 1
+FROM `akun_website`
+WHERE `id_website` = \'WEB001\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `akun_website`
+WHERE `id_website` = \'WEB001\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `akun_website`
+WHERE `id_website` = \'WEB001\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `akun_website`
+WHERE `id_website` = :id_website:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('WEB001', 'akun_website.id_website', [...])
+ 7 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('WEB001', 'akun_website.id_website', [...], null, 'id_website')
+ 8 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('id_website', 'id_website', 'WEB001', [...], [...], 'id_website')
+ 9 SYSTEMPATH\Controller.php(136): CodeIgniter\Validation\Validation->run()
+10 APPPATH\Controllers\Website.php(49): CodeIgniter\Controller->validate([...])
+11 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Website->store()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Website))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:40:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_website' doesn't exist
+[Method: POST, Route: website/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `akun_website`
+WHERE `id_website` = :id_website:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('WEB001', 'akun_website.id_website', [...])
+ 4 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('WEB001', 'akun_website.id_website', [...], null, 'id_website')
+ 5 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('id_website', 'id_website', 'WEB001', [...], [...], 'id_website')
+ 6 SYSTEMPATH\Controller.php(136): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Website.php(49): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Website->store()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Website))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:40:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_website' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `akun_website`
+WHERE `id_website` = \'WEB001\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `akun_website`
+WHERE `id_website` = \'WEB001\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `akun_website`
+WHERE `id_website` = :id_website:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('WEB001', 'akun_website.id_website', [...])
+ 6 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('WEB001', 'akun_website.id_website', [...], null, 'id_website')
+ 7 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('id_website', 'id_website', 'WEB001', [...], [...], 'id_website')
+ 8 SYSTEMPATH\Controller.php(136): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\Website.php(49): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Website->store()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Website))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:40:59 --> [Caused by] mysqli_sql_exception: Table 'tugas_sosmed.akun_website' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT 1
+FROM `akun_website`
+WHERE `id_website` = \'WEB001\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `akun_website`
+WHERE `id_website` = \'WEB001\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `akun_website`
+WHERE `id_website` = \'WEB001\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `akun_website`
+WHERE `id_website` = :id_website:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('WEB001', 'akun_website.id_website', [...])
+ 7 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('WEB001', 'akun_website.id_website', [...], null, 'id_website')
+ 8 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('id_website', 'id_website', 'WEB001', [...], [...], 'id_website')
+ 9 SYSTEMPATH\Controller.php(136): CodeIgniter\Validation\Validation->run()
+10 APPPATH\Controllers\Website.php(49): CodeIgniter\Controller->validate([...])
+11 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Website->store()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Website))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 14:43:25 --> Table 'tugas_sosmed.akun_email' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `akun_email`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `akun_email`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `akun_email`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:43:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
+[Method: GET, Route: email]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:43:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `akun_email`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `akun_email`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:43:25 --> [Caused by] mysqli_sql_exception: Table 'tugas_sosmed.akun_email' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `akun_email`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `akun_email`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `akun_email`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 14:57:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(22): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:57:34 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Jadwal.php(22): App\Models\JadwalModel->getJadwalWithPetugas()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:57:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Jadwal.php(22): App\Models\JadwalModel->getJadwalWithPetugas()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 14:57:34 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
+FROM `jadwal_tugas`
+LEFT JOIN `petugas` ON `petugas`.`id_petugas` = `jadwal_tugas`.`id_petugas`
+ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu" ASC, "Minggu") ASC, `jam_jadwal` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Jadwal.php(22): App\Models\JadwalModel->getJadwalWithPetugas()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 15:05:43 --> Table 'tugas_sosmed.akun_email' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `akun_email`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `akun_email`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `akun_email`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 15:05:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
+[Method: GET, Route: email]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 15:05:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `akun_email`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `akun_email`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 15:05:43 --> [Caused by] mysqli_sql_exception: Table 'tugas_sosmed.akun_email' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `akun_email`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `akun_email`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `akun_email`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 15:15:25 --> Table 'tugas_sosmed.email' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT 1
+FROM `email`
+WHERE `id_email` = \'EM001\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `email`
+WHERE `id_email` = \'EM001\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `email`
+WHERE `id_email` = \'EM001\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `email`
+WHERE `id_email` = :id_email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('EM001', 'email.id_email', [...])
+ 7 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('EM001', 'email.id_email', [...], null, 'id_email')
+ 8 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('id_email', 'id_email', 'EM001', [...], [...], 'id_email')
+ 9 SYSTEMPATH\Controller.php(136): CodeIgniter\Validation\Validation->run()
+10 APPPATH\Controllers\Email.php(49): CodeIgniter\Controller->validate([...])
+11 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->store()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 15:15:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.email' doesn't exist
+[Method: POST, Route: email/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `email`
+WHERE `id_email` = :id_email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('EM001', 'email.id_email', [...])
+ 4 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('EM001', 'email.id_email', [...], null, 'id_email')
+ 5 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('id_email', 'id_email', 'EM001', [...], [...], 'id_email')
+ 6 SYSTEMPATH\Controller.php(136): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Email.php(49): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->store()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 15:15:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.email' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `email`
+WHERE `id_email` = \'EM001\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `email`
+WHERE `id_email` = \'EM001\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `email`
+WHERE `id_email` = :id_email:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('EM001', 'email.id_email', [...])
+ 6 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('EM001', 'email.id_email', [...], null, 'id_email')
+ 7 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('id_email', 'id_email', 'EM001', [...], [...], 'id_email')
+ 8 SYSTEMPATH\Controller.php(136): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\Email.php(49): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->store()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 15:15:25 --> [Caused by] mysqli_sql_exception: Table 'tugas_sosmed.email' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT 1
+FROM `email`
+WHERE `id_email` = \'EM001\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `email`
+WHERE `id_email` = \'EM001\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `email`
+WHERE `id_email` = \'EM001\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `email`
+WHERE `id_email` = :id_email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('EM001', 'email.id_email', [...])
+ 7 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('EM001', 'email.id_email', [...], null, 'id_email')
+ 8 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('id_email', 'id_email', 'EM001', [...], [...], 'id_email')
+ 9 SYSTEMPATH\Controller.php(136): CodeIgniter\Validation\Validation->run()
+10 APPPATH\Controllers\Email.php(49): CodeIgniter\Controller->validate([...])
+11 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->store()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')

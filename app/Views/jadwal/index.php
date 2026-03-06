@@ -10,238 +10,114 @@
     </div>
 </div>
 
-<!-- Section Penjadwalan -->
-<div class="data-akun-section">
-    <!-- Header dengan Tombol Tambah -->
-    <div class="section-header">
-        <h3>
-            <i class="fas fa-calendar-alt"></i>
-            Daftar Jadwal Tugas
-        </h3>
-        
-        <!-- Tombol Buat Jadwal -->
-        <a href="<?= base_url('transaksi/jadwal/create') ?>" class="btn-tambah">
-            <i class="fas fa-plus"></i>
-            Buat Jadwal
-        </a>
+<!-- Flash Messages -->
+<?php if (session()->getFlashdata('success')): ?>
+    <div style="background: #d4edda; color: #155724; padding: 15px; border-radius: 10px; margin-bottom: 20px;">
+        <i class="fas fa-check-circle"></i> <?= session()->getFlashdata('success') ?>
     </div>
+<?php endif; ?>
 
-    <!-- Table Container dengan scroll -->
-    <div class="table-container" style="overflow-x: auto; width: 100%;">
-        <table style="min-width: 1300px;">
+<?php if (session()->getFlashdata('error')): ?>
+    <div style="background: #f8d7da; color: #721c24; padding: 15px; border-radius: 10px; margin-bottom: 20px;">
+        <i class="fas fa-exclamation-circle"></i> <?= session()->getFlashdata('error') ?>
+    </div>
+<?php endif; ?>
+
+<!-- Filter & Tombol Tambah -->
+<div style="background: white; border-radius: 20px; padding: 20px; margin-bottom: 20px; border: 1px solid #e2e8f0;">
+    <form method="post" action="<?= base_url('jadwal/filter') ?>" style="display: flex; gap: 15px; flex-wrap: wrap; align-items: flex-end;">
+        <?= csrf_field() ?>
+        
+        <div style="flex: 1; min-width: 200px;">
+            <label style="display: block; margin-bottom: 5px; font-weight: 600;">Filter Hari</label>
+            <select name="hari" style="width: 100%; padding: 10px; border: 2px solid #e2e8f0; border-radius: 10px;">
+                <option value="">Semua Hari</option>
+                <option value="Senin">Senin</option>
+                <option value="Selasa">Selasa</option>
+                <option value="Rabu">Rabu</option>
+                <option value="Kamis">Kamis</option>
+                <option value="Jumat">Jumat</option>
+                <option value="Sabtu">Sabtu</option>
+                <option value="Minggu">Minggu</option>
+            </select>
+        </div>
+        
+        <div style="flex: 1; min-width: 200px;">
+            <label style="display: block; margin-bottom: 5px; font-weight: 600;">Filter Petugas</label>
+            <select name="id_petugas" style="width: 100%; padding: 10px; border: 2px solid #e2e8f0; border-radius: 10px;">
+                <option value="">Semua Petugas</option>
+                <?php foreach ($petugas as $p): ?>
+                    <option value="<?= $p['id_petugas'] ?>"><?= $p['nama_petugas'] ?></option>
+                <?php endforeach; ?>
+            </select>
+        </div>
+        
+        <div>
+            <button type="submit" style="background: #3b82f6; color: white; border: none; padding: 10px 25px; border-radius: 10px; font-weight: 600; cursor: pointer;">
+                <i class="fas fa-filter"></i> Filter
+            </button>
+            <a href="<?= base_url('jadwal/create') ?>" style="background: #10b981; color: white; border: none; padding: 10px 25px; border-radius: 10px; font-weight: 600; text-decoration: none; margin-left: 10px;">
+                <i class="fas fa-plus"></i> Tambah Jadwal
+            </a>
+        </div>
+    </form>
+</div>
+
+<!-- Tabel Jadwal -->
+<div style="background: white; border-radius: 20px; padding: 20px; border: 1px solid #e2e8f0;">
+    <h3 style="margin-bottom: 20px;">Daftar Jadwal Tugas</h3>
+    
+    <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse;">
             <thead>
-                <tr>
-                    <th>No</th>
-                    <th>ID Jadwal</th>
-                    <th>Hari</th>
-                    <th>Jam</th>
-                    <th>ID Petugas</th>
-                    <th>Instagram</th>
-                    <th>Facebook</th>
-                    <th>TikTok</th>
-                    <th>Email</th>
-                    <th>Website</th>
-                    <th>WhatsApp</th>
-                    <th>Aksi</th>
+                <tr style="background: #f8fafc;">
+                    <th style="padding: 12px; text-align: left;">No</th>
+                    <th style="padding: 12px; text-align: left;">ID Jadwal</th>
+                    <th style="padding: 12px; text-align: left;">Hari</th>
+                    <th style="padding: 12px; text-align: left;">Jam</th>
+                    <th style="padding: 12px; text-align: left;">Petugas</th>
+                    <th style="padding: 12px; text-align: left;">Instagram</th>
+                    <th style="padding: 12px; text-align: left;">Facebook</th>
+                    <th style="padding: 12px; text-align: left;">TikTok</th>
+                    <th style="padding: 12px; text-align: left;">Email</th>
+                    <th style="padding: 12px; text-align: left;">Website</th>
+                    <th style="padding: 12px; text-align: left;">WhatsApp</th>
+                    <th style="padding: 12px; text-align: left;">Aksi</th>
                 </tr>
             </thead>
             <tbody>
-                <?php if (!empty($jadwal) && is_array($jadwal)): ?>
+                <?php if (!empty($jadwal)): ?>
                     <?php $no = 1; ?>
                     <?php foreach ($jadwal as $j): ?>
-                    <tr>
-                        <td><strong><?= $no++ ?></strong></td>
-                        <td><?= $j['id_jadwal'] ?></td>
-                        <td><?= $j['hari_jadwal'] ?></td>
-                        <td><?= $j['jam_jadwal'] ?></td>
-                        <td><?= $j['id_petugas'] ?></td>
-                        <td><?= $j['detail_tugas_insta'] ?></td>
-                        <td><?= $j['detail_tugas_fb'] ?></td>
-                        <td><?= $j['detail_tugas_tiktok'] ?></td>
-                        <td><?= $j['detail_tugas_email'] ?></td>
-                        <td><?= $j['detail_tugas_web'] ?></td>
-                        <td><?= $j['detail_tugas_wa'] ?></td>
-                        <td>
-                            <div class="action-buttons">
-                                <!-- Tombol Hapus -->
-                                <a href="<?= base_url('transaksi/jadwal/delete/'.$j['id_jadwal']) ?>" 
-                                   class="btn-hapus"
-                                   onclick="return confirm('Yakin ingin menghapus jadwal ini?')">
-                                    <i class="fas fa-trash"></i>
-                                    Hapus
-                                </a>
-                            </div>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 12px;"><?= $no++ ?></td>
+                        <td style="padding: 12px;"><?= $j['id_jadwal'] ?></td>
+                        <td style="padding: 12px;"><?= $j['hari_jadwal'] ?></td>
+                        <td style="padding: 12px;"><?= $j['jam_jadwal'] ?></td>
+                        <td style="padding: 12px;"><?= $j['nama_petugas'] ?></td>
+                        <td style="padding: 12px;"><?= $j['detail_tugas_instagram'] ? substr($j['detail_tugas_instagram'], 0, 15) . '...' : '-' ?></td>
+                        <td style="padding: 12px;"><?= $j['detail_tugas_facebook'] ? substr($j['detail_tugas_facebook'], 0, 15) . '...' : '-' ?></td>
+                        <td style="padding: 12px;"><?= $j['detail_tugas_tiktok'] ? substr($j['detail_tugas_tiktok'], 0, 15) . '...' : '-' ?></td>
+                        <td style="padding: 12px;"><?= $j['detail_tugas_email'] ? substr($j['detail_tugas_email'], 0, 15) . '...' : '-' ?></td>
+                        <td style="padding: 12px;"><?= $j['detail_tugas_website'] ? substr($j['detail_tugas_website'], 0, 15) . '...' : '-' ?></td>
+                        <td style="padding: 12px;"><?= $j['detail_tugas_wa'] ? substr($j['detail_tugas_wa'], 0, 15) . '...' : '-' ?></td>
+                        <td style="padding: 12px;">
+                            <a href="<?= base_url('jadwal/edit/'.$j['id_jadwal']) ?>" style="background: #dbeafe; color: #1d4ed8; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-right: 5px;">Edit</a>
+                            <form action="<?= base_url('jadwal/delete/'.$j['id_jadwal']) ?>" method="post" style="display: inline;">
+                                <?= csrf_field() ?>
+                                <button type="submit" style="background: #fee2e2; color: #dc2626; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;" onclick="return confirm('Yakin ingin menghapus?')">Hapus</button>
+                            </form>
                         </td>
                     </tr>
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="12" style="text-align: center; padding: 40px; color: #64748b;">
-                            <i class="fas fa-calendar-times" style="font-size: 32px; display: block; margin-bottom: 10px;"></i>
-                            Belum ada jadwal tugas
-                        </td>
+                        <td colspan="12" style="text-align: center; padding: 40px;">Belum ada data jadwal</td>
                     </tr>
                 <?php endif; ?>
             </tbody>
         </table>
     </div>
 </div>
-
-<style>
-/* ===== TOMBOL TAMBAH ===== */
-.btn-tambah {
-    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-    color: white;
-    border: none;
-    padding: 14px 32px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 20px -4px rgba(59, 130, 246, 0.5);
-    text-decoration: none;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-tambah:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.7s;
-    z-index: 1;
-}
-
-.btn-tambah:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 15px 30px -4px rgba(59, 130, 246, 0.8);
-}
-
-.btn-tambah:hover:before {
-    left: 100%;
-}
-
-.btn-tambah i {
-    font-size: 16px;
-    transition: transform 0.3s ease;
-    position: relative;
-    z-index: 2;
-}
-
-.btn-tambah:hover i {
-    transform: rotate(90deg);
-}
-
-/* ===== ACTION BUTTONS (HAPUS) ===== */
-.action-buttons {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-/* TOMBOL HAPUS */
-.btn-hapus {
-    padding: 10px 22px;
-    border: none;
-    border-radius: 40px;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: #fee2e2;
-    color: #ef4444;
-    border: 1px solid rgba(239, 68, 68, 0.2);
-    box-shadow: 0 4px 10px rgba(239, 68, 68, 0.1);
-    text-decoration: none;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-hapus:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    transform: translate(-50%, -50%);
-    transition: width 0.6s, height 0.6s;
-    z-index: 0;
-}
-
-.btn-hapus:hover:before {
-    width: 300px;
-    height: 300px;
-}
-
-.btn-hapus:hover {
-    background: #ef4444;
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(239, 68, 68, 0.4);
-}
-
-.btn-hapus i,
-.btn-hapus span {
-    position: relative;
-    z-index: 1;
-}
-
-.btn-hapus:hover i {
-    animation: shake 0.5s ease;
-}
-
-/* Animasi */
-@keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-4px); }
-    75% { transform: translateX(4px); }
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-    .table-container {
-        overflow-x: auto;
-    }
-    
-    table {
-        min-width: 1200px;
-    }
-}
-
-@media (max-width: 768px) {
-    .section-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .btn-tambah {
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .action-buttons {
-        flex-direction: column;
-    }
-    
-    .btn-hapus {
-        width: 100%;
-        justify-content: center;
-    }
-}
-</style>
 
 <?= $this->endSection() ?>

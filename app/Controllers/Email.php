@@ -25,11 +25,22 @@ class Email extends BaseController
 
     public function store()
     {
+        $rules = [
+            'id_email' => 'required|is_unique[email.id_email]',
+            'alamat_email' => 'required|valid_email'
+        ];
+
+        if (!$this->validate($rules)) {
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
+
         $this->email->save([
+            'id_email'     => $this->request->getPost('id_email'),
             'alamat_email' => $this->request->getPost('alamat_email')
         ]);
 
-        return redirect()->to(base_url('email'));
+        session()->setFlashdata('success', 'Data berhasil ditambahkan');
+        return redirect()->to('/email');
     }
 
     public function edit($id)
@@ -40,16 +51,26 @@ class Email extends BaseController
 
     public function update($id)
     {
+        $rules = [
+            'alamat_email' => 'required|valid_email'
+        ];
+
+        if (!$this->validate($rules)) {
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
+
         $this->email->update($id, [
             'alamat_email' => $this->request->getPost('alamat_email')
         ]);
 
-        return redirect()->to(base_url('email'));
+        session()->setFlashdata('success', 'Data berhasil diupdate');
+        return redirect()->to('/email');
     }
 
     public function delete($id)
     {
         $this->email->delete($id);
-        return redirect()->to(base_url('email'));
+        session()->setFlashdata('success', 'Data berhasil dihapus');
+        return redirect()->to('/email');
     }
 }

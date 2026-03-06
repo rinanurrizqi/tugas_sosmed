@@ -7,12 +7,14 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-// TRANSAKSI
-$routes->group('transaksi', function($routes) {
+    // TRANSAKSI
     $routes->get('jadwal',                    'Jadwal::index');
     $routes->get('jadwal/create',             'Jadwal::create');
     $routes->post('jadwal/store',             'Jadwal::store');
-    $routes->get('jadwal/delete/(:segment)',  'Jadwal::delete/$1');
+    $routes->post('jadwal/filter',            'Jadwal::filter');
+    $routes->get('jadwal/edit/(:segment)',    'Jadwal::edit/$1');
+    $routes->post('jadwal/update/(:segment)', 'Jadwal::update/$1');
+    $routes->post('jadwal/delete/(:segment)', 'Jadwal::delete/$1');
 
     $routes->get('progress',                   'Progress::index');
     $routes->get('progress/create',            'Progress::create');
@@ -20,7 +22,6 @@ $routes->group('transaksi', function($routes) {
     $routes->get('progress/edit/(:segment)',   'Progress::edit/$1');
     $routes->post('progress/update/(:segment)','Progress::update/$1');
     $routes->get('progress/delete/(:segment)', 'Progress::delete/$1');
-});
 
 // MASTER - PETUGAS
 $routes->get('petugas',                    'Petugas::index');
@@ -62,15 +63,15 @@ $routes->get('email/create',             'Email::create');
 $routes->post('email/store',             'Email::store');
 $routes->get('email/edit/(:segment)',    'Email::edit/$1');
 $routes->post('email/update/(:segment)', 'Email::update/$1');
-$routes->get('email/delete/(:segment)',  'Email::delete/$1');
+$routes->post('email/delete/(:segment)', 'Email::delete/$1');
 
 // MASTER - WEBSITE
-$routes->get('website',                    'Website::index');
-$routes->get('website/create',             'Website::create');
-$routes->post('website/store',             'Website::store');
-$routes->get('website/edit/(:segment)',    'Website::edit/$1');
+$routes->get('website',           'Website::index');
+$routes->get('website/create',    'Website::create');
+$routes->post('website/store',    'Website::store');
+$routes->get('website/edit/(:segment)', 'Website::edit/$1');
 $routes->post('website/update/(:segment)', 'Website::update/$1');
-$routes->get('website/delete/(:segment)',  'Website::delete/$1');
+$routes->get('website/delete/(:segment)', 'Website::delete/$1');
 
 // MASTER - WA
 $routes->get('wa',                    'Wa::index');

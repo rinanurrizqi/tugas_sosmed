@@ -5,7 +5,9 @@ use CodeIgniter\Model;
 
 class EmailModel extends Model
 {
-    protected $table = 'akun_email';
-    protected $primaryKey = 'id_email';
-    protected $allowedFields = ['alamat_email'];
+    protected $table            = 'alamat_email';
+    protected $primaryKey       = 'id_email';
+    protected $useAutoIncrement = false;
+    protected $allowedFields    = ['id_email', 'alamat_email'];
+    protected $useTimestamps    = false;
 }
