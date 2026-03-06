@@ -9,7 +9,7 @@
     <a href="<?= base_url('tiktok') ?>">TikTok</a>
     <a href="<?= base_url('email') ?>">Email</a>
     <a href="<?= base_url('website') ?>">Website</a>
-    <a href="<?= base_url('wa') ?>">WhatsApp</a>
+    <a href="<?= base_url('whatsapp') ?>">WhatsApp</a>
 
     <div class="sidebar-section">TRANSAKSI</div>
 <<<<<<< HEAD

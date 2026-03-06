@@ -3,7 +3,7 @@
 namespace App\Controllers;
 use App\Models\FacebookModel;
 
-class Facebook extends BaseController
+class facebook extends BaseController
 {
     protected $facebook;
 
