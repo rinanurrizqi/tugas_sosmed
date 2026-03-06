@@ -1,4 +1,81 @@
+<<<<<<< HEAD
 ERROR - 2026-03-06 04:09:19 --> Table 'tugas_sosmed.akun_email' doesn't exist
+=======
+ERROR - 2026-03-06 04:42:27 --> Table 'tugas_sosmed.jadwal_tugas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `jadwal_tugas`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jadwal_tugas`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jadwal_tugas`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jadwal_tugas`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Jadwal.php(24): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 04:42:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.jadwal_tugas' doesn't exist
+[Method: GET, Route: transaksi/jadwal]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jadwal_tugas`', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Jadwal.php(24): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 04:42:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.jadwal_tugas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jadwal_tugas`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jadwal_tugas`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jadwal_tugas`', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Jadwal.php(24): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 04:42:27 --> [Caused by] mysqli_sql_exception: Table 'tugas_sosmed.jadwal_tugas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `jadwal_tugas`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jadwal_tugas`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jadwal_tugas`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jadwal_tugas`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Jadwal.php(24): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 08:30:45 --> Table 'tugas_sosmed.akun_email' doesn't exist
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
  1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
 FROM `akun_email`', 0)
@@ -18,7 +95,11 @@ FROM `akun_email`', [], false)
 12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+<<<<<<< HEAD
 CRITICAL - 2026-03-06 04:09:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
+=======
+CRITICAL - 2026-03-06 08:30:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
 [Method: GET, Route: email]
 in SYSTEMPATH\Database\BaseConnection.php on line 724.
  1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
@@ -33,7 +114,11 @@ FROM `akun_email`', [], false)
  9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+<<<<<<< HEAD
 CRITICAL - 2026-03-06 04:09:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
+=======
+CRITICAL - 2026-03-06 08:30:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
  1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
 FROM `akun_email`')
@@ -51,7 +136,11 @@ FROM `akun_email`', [], false)
 11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+<<<<<<< HEAD
 CRITICAL - 2026-03-06 04:09:19 --> [Caused by] mysqli_sql_exception: Table 'tugas_sosmed.akun_email' doesn't exist
+=======
+CRITICAL - 2026-03-06 08:30:45 --> [Caused by] mysqli_sql_exception: Table 'tugas_sosmed.akun_email' doesn't exist
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
  1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
 FROM `akun_email`', 0)
@@ -71,6 +160,7 @@ FROM `akun_email`', [], false)
 12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+<<<<<<< HEAD
 ERROR - 2026-03-06 07:51:51 --> Table 'tugas_sosmed.akun_website' doesn't exist
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
  1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
@@ -86,11 +176,29 @@ FROM `akun_website`', [], false)
  7 APPPATH\Controllers\Website.php(17): CodeIgniter\BaseModel->findAll()
  8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Website->index()
  9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Website))
+=======
+ERROR - 2026-03-06 08:59:11 --> Table 'tugas_sosmed.akun_email' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `akun_email`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `akun_email`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `akun_email`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
 10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+<<<<<<< HEAD
 CRITICAL - 2026-03-06 07:51:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_website' doesn't exist
 [Method: GET, Route: website]
 in SYSTEMPATH\Database\BaseConnection.php on line 724.
@@ -101,11 +209,24 @@ FROM `akun_website`', [], false)
  4 APPPATH\Controllers\Website.php(17): CodeIgniter\BaseModel->findAll()
  5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Website->index()
  6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Website))
+=======
+CRITICAL - 2026-03-06 08:59:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
+[Method: GET, Route: email]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
  7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
  9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+<<<<<<< HEAD
 CRITICAL - 2026-03-06 07:51:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_website' doesn't exist
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
  1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
@@ -119,11 +240,27 @@ FROM `akun_website`', [], false)
  6 APPPATH\Controllers\Website.php(17): CodeIgniter\BaseModel->findAll()
  7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Website->index()
  8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Website))
+=======
+CRITICAL - 2026-03-06 08:59:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `akun_email`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `akun_email`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
  9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
 11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+<<<<<<< HEAD
 CRITICAL - 2026-03-06 07:51:51 --> [Caused by] mysqli_sql_exception: Table 'tugas_sosmed.akun_website' doesn't exist
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
  1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
@@ -139,11 +276,29 @@ FROM `akun_website`', [], false)
  7 APPPATH\Controllers\Website.php(17): CodeIgniter\BaseModel->findAll()
  8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Website->index()
  9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Website))
+=======
+CRITICAL - 2026-03-06 08:59:11 --> [Caused by] mysqli_sql_exception: Table 'tugas_sosmed.akun_email' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `akun_email`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `akun_email`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `akun_email`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun_email`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
 10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+<<<<<<< HEAD
 ERROR - 2026-03-06 08:56:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
  1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
@@ -1631,11 +1786,27 @@ WHERE `id_website` = :id_website:
  9 APPPATH\Controllers\Website.php(49): CodeIgniter\Controller->validate([...])
 10 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Website->store()
 11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Website))
+=======
+ERROR - 2026-03-06 09:00:08 --> Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (:link_tiktok:)', [...], false)
+ 5 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Tiktok.php(28): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Tiktok->store()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tiktok))
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
 12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
 14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+<<<<<<< HEAD
 CRITICAL - 2026-03-06 14:40:59 --> [Caused by] mysqli_sql_exception: Table 'tugas_sosmed.akun_website' doesn't exist
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
  1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT 1
@@ -1715,12 +1886,133 @@ FROM `akun_email`', [], false)
  6 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
  7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
  8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+=======
+CRITICAL - 2026-03-06 09:00:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+[Method: POST, Route: tiktok/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (:link_tiktok:)', [...], false)
+ 2 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Tiktok.php(28): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Tiktok->store()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tiktok))
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
  9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
 11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+<<<<<<< HEAD
 CRITICAL - 2026-03-06 14:43:25 --> [Caused by] mysqli_sql_exception: Table 'tugas_sosmed.akun_email' doesn't exist
+=======
+CRITICAL - 2026-03-06 09:00:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (:link_tiktok:)', [...], false)
+ 4 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Tiktok.php(28): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Tiktok->store()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tiktok))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 09:00:08 --> [Caused by] mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (:link_tiktok:)', [...], false)
+ 5 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Tiktok.php(28): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Tiktok->store()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tiktok))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 09:00:13 --> Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (:link_tiktok:)', [...], false)
+ 5 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Tiktok.php(28): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Tiktok->store()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tiktok))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 09:00:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+[Method: POST, Route: tiktok/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (:link_tiktok:)', [...], false)
+ 2 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Tiktok.php(28): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Tiktok->store()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tiktok))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 09:00:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (:link_tiktok:)', [...], false)
+ 4 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Tiktok.php(28): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Tiktok->store()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tiktok))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+CRITICAL - 2026-03-06 09:00:13 --> [Caused by] mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (\'https://www.tiktok.com/@self.remindr\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akun_tiktok` (`link_tiktok`) VALUES (:link_tiktok:)', [...], false)
+ 5 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Tiktok.php(28): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Tiktok->store()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tiktok))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+ERROR - 2026-03-06 09:00:52 --> Table 'tugas_sosmed.akun_email' doesn't exist
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
  1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
 FROM `akun_email`', 0)
@@ -1732,6 +2024,7 @@ FROM `akun_email`')
 FROM `akun_email`', [], false)
  5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
  6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+<<<<<<< HEAD
  7 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
  8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
  9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
@@ -1806,12 +2099,17 @@ ORDER BY FIELD(hari_jadwal ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" A
  6 APPPATH\Models\JadwalModel.php(37): CodeIgniter\BaseModel->findAll()
  7 APPPATH\Controllers\Jadwal.php(22): App\Models\JadwalModel->getJadwalWithPetugas()
  8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->index()
+=======
+ 7 APPPATH\Controllers\Jadwal.php(34): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->create()
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
  9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
 10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+<<<<<<< HEAD
 CRITICAL - 2026-03-06 14:57:34 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Senin" ASC, "Selasa" ASC, "Rabu" ASC, "Kamis" ASC, "Jumat" ASC, "Sabtu"...' at line 4
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
  1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `jadwal_tugas`.*, `petugas`.`nama_petugas`
@@ -1863,20 +2161,34 @@ FROM `akun_email`', [], false)
 14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
 CRITICAL - 2026-03-06 15:05:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
 [Method: GET, Route: email]
+=======
+CRITICAL - 2026-03-06 09:00:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
+[Method: GET, Route: transaksi/jadwal/create]
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
 in SYSTEMPATH\Database\BaseConnection.php on line 724.
  1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
 FROM `akun_email`', [], false)
  2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
  3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+<<<<<<< HEAD
  4 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
  5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
  6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+=======
+ 4 APPPATH\Controllers\Jadwal.php(34): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->create()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
  7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
  9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+<<<<<<< HEAD
 CRITICAL - 2026-03-06 15:05:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
+=======
+CRITICAL - 2026-03-06 09:00:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tugas_sosmed.akun_email' doesn't exist
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
  1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
 FROM `akun_email`')
@@ -1886,15 +2198,25 @@ FROM `akun_email`')
 FROM `akun_email`', [], false)
  4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
  5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+<<<<<<< HEAD
  6 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
  7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
  8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+=======
+ 6 APPPATH\Controllers\Jadwal.php(34): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->create()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
  9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
 11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+<<<<<<< HEAD
 CRITICAL - 2026-03-06 15:05:43 --> [Caused by] mysqli_sql_exception: Table 'tugas_sosmed.akun_email' doesn't exist
+=======
+CRITICAL - 2026-03-06 09:00:52 --> [Caused by] mysqli_sql_exception: Table 'tugas_sosmed.akun_email' doesn't exist
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
  1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
 FROM `akun_email`', 0)
@@ -1906,14 +2228,21 @@ FROM `akun_email`')
 FROM `akun_email`', [], false)
  5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
  6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+<<<<<<< HEAD
  7 APPPATH\Controllers\Email.php(17): CodeIgniter\BaseModel->findAll()
  8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Email->index()
  9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+=======
+ 7 APPPATH\Controllers\Jadwal.php(34): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Jadwal->create()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwal))
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
 10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+<<<<<<< HEAD
 ERROR - 2026-03-06 15:15:25 --> Table 'tugas_sosmed.email' doesn't exist
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
  1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT 1
@@ -2023,3 +2352,5 @@ WHERE `id_email` = :id_email:
 15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\tugas_sosmed\\public\\index.php')
+=======
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5

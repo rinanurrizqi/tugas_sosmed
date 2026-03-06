@@ -71,6 +71,7 @@
 </div>
 
 <style>
+<<<<<<< HEAD
 /* ===== TOMBOL TAMBAH ===== */
 .btn-tambah {
     background: linear-gradient(135deg, #3b82f6, #1d4ed8);
@@ -278,6 +279,9 @@
         justify-content: center;
     }
 }
+=======
+    /* ... Copy paste saja bagian <style> dari Instagram index.php kamu ke sini ... */
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
 </style>
 
 <?= $this->endSection() ?>

@@ -12,6 +12,12 @@
     <a href="<?= base_url('wa') ?>">WhatsApp</a>
 
     <div class="sidebar-section">TRANSAKSI</div>
+<<<<<<< HEAD
     <a href="<?= base_url('jadwal') ?>">Penjadwalan Tugas</a>
     <a href="<?= base_url('progress') ?>">Progress Harian</a>
+=======
+    <a href="<?= base_url('transaksi/jadwal') ?>">Penjadwalan Tugas</a>
+    <a href="<?= base_url('transaksi/progress') ?>">Progress Harian</a>
+
+>>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
 </aside>
