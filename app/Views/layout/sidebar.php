@@ -59,17 +59,6 @@
         <span>Progress Harian</span>
     </a>
 
-    <div class="sidebar-section">LAPORAN</div>
-    
-    <a href="<?= base_url('laporan-progress') ?>" class="sidebar-link <?= uri_string() == 'laporan-progress' ? 'active' : '' ?>">
-        <i class="fas fa-file-alt"></i>
-        <span>Laporan Progress</span>
-    </a>
-    
-    <a href="<?= base_url('rekap-petugas') ?>" class="sidebar-link <?= uri_string() == 'rekap-petugas' ? 'active' : '' ?>">
-        <i class="fas fa-file-invoice"></i>
-        <span>Rekap Petugas</span>
-    </a>
 </aside>
 
 <!-- Menu toggle untuk mobile -->

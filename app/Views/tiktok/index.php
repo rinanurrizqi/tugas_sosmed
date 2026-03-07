@@ -67,16 +67,14 @@
                             <div class="action-buttons">
                                 <!-- Tombol Edit -->
                                 <a href="<?= base_url('tiktok/edit/'.$tt['id_tiktok']) ?>" class="btn-edit">
-                                    <i class="fas fa-edit"></i>
-                                    Edit
+                                    <i class="fas fa-edit"></i> Edit
                                 </a>
                                 
-                                <!-- Tombol Hapus -->
+                                <!-- Tombol Hapus - Gunakan POST -->
                                 <form action="<?= base_url('tiktok/delete/'.$tt['id_tiktok']) ?>" method="post" style="display: inline;" onsubmit="return confirm('Yakin ingin menghapus data ini?')">
                                     <?= csrf_field() ?>
                                     <button type="submit" class="btn-hapus">
-                                        <i class="fas fa-trash"></i>
-                                        Hapus
+                                        <i class="fas fa-trash"></i> Hapus
                                     </button>
                                 </form>
                             </div>

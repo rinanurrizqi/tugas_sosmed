@@ -4,6 +4,10 @@
 <!-- Topbar -->
 <div class="topbar">
     <h2><?= isset($email) ? 'Edit Akun Email' : 'Tambah Akun Email' ?></h2>
+    <div class="topbar-user">
+        <i class="fas fa-user-circle"></i>
+        <span>Admin</span>
+    </div>
 </div>
 
 <!-- Tampilkan Error Validation -->
@@ -28,6 +32,7 @@
         <!-- Input ID Email -->
         <div style="margin-bottom: 20px;">
             <label style="display: block; margin-bottom: 10px; font-weight: 600; color: #0f172a;">
+                <i class="fas fa-id-card" style="color: #3b82f6; margin-right: 5px;"></i>
                 ID Email <span style="color: #ef4444;">*</span>
             </label>
             <input type="text" 
@@ -52,6 +57,7 @@
         <!-- Input Alamat Email -->
         <div style="margin-bottom: 30px;">
             <label style="display: block; margin-bottom: 10px; font-weight: 600; color: #0f172a;">
+                <i class="fas fa-envelope" style="color: #ea4335; margin-right: 5px;"></i>
                 Alamat Email <span style="color: #ef4444;">*</span>
             </label>
             <div style="position: relative;">
