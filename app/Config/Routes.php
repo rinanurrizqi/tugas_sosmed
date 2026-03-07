@@ -7,21 +7,23 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-    // TRANSAKSI
-    $routes->get('jadwal',                    'Jadwal::index');
-    $routes->get('jadwal/create',             'Jadwal::create');
-    $routes->post('jadwal/store',             'Jadwal::store');
-    $routes->post('jadwal/filter',            'Jadwal::filter');
-    $routes->get('jadwal/edit/(:segment)',    'Jadwal::edit/$1');
-    $routes->post('jadwal/update/(:segment)', 'Jadwal::update/$1');
-    $routes->post('jadwal/delete/(:segment)', 'Jadwal::delete/$1');
+// TRANSAKSI - JADWAL TUGAS
+$routes->get('jadwal',                    'Jadwal::index');
+$routes->get('jadwal/create',             'Jadwal::create');
+$routes->post('jadwal/store',             'Jadwal::store');
+$routes->post('jadwal/filter',            'Jadwal::filter');
+$routes->get('jadwal/edit/(:segment)',    'Jadwal::edit/$1');
+$routes->post('jadwal/update/(:segment)', 'Jadwal::update/$1');
+$routes->post('jadwal/delete/(:segment)', 'Jadwal::delete/$1');
 
-    $routes->get('progress',                   'Progress::index');
-    $routes->get('progress/create',            'Progress::create');
-    $routes->post('progress/store',            'Progress::store');
-    $routes->get('progress/edit/(:segment)',   'Progress::edit/$1');
-    $routes->post('progress/update/(:segment)','Progress::update/$1');
-    $routes->get('progress/delete/(:segment)', 'Progress::delete/$1');
+// TRANSAKSI - PROGRESS HARIAN
+$routes->get('progress',                    'Progress::index');
+$routes->get('progress/create',             'Progress::create');
+$routes->post('progress/store',             'Progress::store');
+$routes->post('progress/filter',            'Progress::filter');
+$routes->get('progress/edit/(:segment)',    'Progress::edit/$1');
+$routes->post('progress/update/(:segment)', 'Progress::update/$1');
+$routes->post('progress/delete/(:segment)', 'Progress::delete/$1');
 
 // MASTER - PETUGAS
 $routes->get('petugas',                    'Petugas::index');
@@ -73,10 +75,10 @@ $routes->get('website/edit/(:segment)', 'Website::edit/$1');
 $routes->post('website/update/(:segment)', 'Website::update/$1');
 $routes->get('website/delete/(:segment)', 'Website::delete/$1');
 
-// MASTER - WA
-$routes->get('wa',                    'Wa::index');
-$routes->get('wa/create',             'Wa::create');
-$routes->post('wa/store',             'Wa::store');
-$routes->get('wa/edit/(:segment)',    'Wa::edit/$1');
-$routes->post('wa/update/(:segment)', 'Wa::update/$1');
-$routes->get('wa/delete/(:segment)',  'Wa::delete/$1');
+// MASTER - WHATSAPP
+$routes->get('whatsapp',                    'Whatsapp::index');
+$routes->get('whatsapp/create',             'Whatsapp::create');
+$routes->post('whatsapp/store',             'Whatsapp::store');
+$routes->get('whatsapp/edit/(:segment)',    'Whatsapp::edit/$1');
+$routes->post('whatsapp/update/(:segment)', 'Whatsapp::update/$1');
+$routes->post('whatsapp/delete/(:segment)', 'Whatsapp::delete/$1');

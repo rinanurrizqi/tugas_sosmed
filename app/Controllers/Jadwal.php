@@ -46,22 +46,23 @@ class Jadwal extends BaseController
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
+        // Data dengan semua foreign key dikirim NULL jika kosong
         $data = [
             'id_jadwal' => $this->request->getPost('id_jadwal'),
             'hari_jadwal' => $this->request->getPost('hari_jadwal'),
             'jam_jadwal' => $this->request->getPost('jam_jadwal'),
-            'id_petugas' => $this->request->getPost('id_petugas'),
-            'id_instagram' => $this->request->getPost('id_instagram'),
+            'id_petugas' => $this->request->getPost('id_petugas'), // WAJIB ADA
+            'id_instagram' => $this->request->getPost('id_instagram') ?: null,
             'detail_tugas_instagram' => $this->request->getPost('detail_tugas_instagram'),
-            'id_facebook' => $this->request->getPost('id_facebook'),
+            'id_facebook' => $this->request->getPost('id_facebook') ?: null,
             'detail_tugas_facebook' => $this->request->getPost('detail_tugas_facebook'),
-            'id_tiktok' => $this->request->getPost('id_tiktok'),
+            'id_tiktok' => $this->request->getPost('id_tiktok') ?: null, // PENTING!
             'detail_tugas_tiktok' => $this->request->getPost('detail_tugas_tiktok'),
-            'id_email' => $this->request->getPost('id_email'),
+            'id_email' => $this->request->getPost('id_email') ?: null,
             'detail_tugas_email' => $this->request->getPost('detail_tugas_email'),
-            'id_website' => $this->request->getPost('id_website'),
+            'id_website' => $this->request->getPost('id_website') ?: null,
             'detail_tugas_website' => $this->request->getPost('detail_tugas_website'),
-            'id_wa' => $this->request->getPost('id_wa'),
+            'id_wa' => $this->request->getPost('id_wa') ?: null,
             'detail_tugas_wa' => $this->request->getPost('detail_tugas_wa')
         ];
 
@@ -100,17 +101,17 @@ class Jadwal extends BaseController
             'hari_jadwal' => $this->request->getPost('hari_jadwal'),
             'jam_jadwal' => $this->request->getPost('jam_jadwal'),
             'id_petugas' => $this->request->getPost('id_petugas'),
-            'id_instagram' => $this->request->getPost('id_instagram'),
+            'id_instagram' => $this->request->getPost('id_instagram') ?: null,
             'detail_tugas_instagram' => $this->request->getPost('detail_tugas_instagram'),
-            'id_facebook' => $this->request->getPost('id_facebook'),
+            'id_facebook' => $this->request->getPost('id_facebook') ?: null,
             'detail_tugas_facebook' => $this->request->getPost('detail_tugas_facebook'),
-            'id_tiktok' => $this->request->getPost('id_tiktok'),
+            'id_tiktok' => $this->request->getPost('id_tiktok') ?: null,
             'detail_tugas_tiktok' => $this->request->getPost('detail_tugas_tiktok'),
-            'id_email' => $this->request->getPost('id_email'),
+            'id_email' => $this->request->getPost('id_email') ?: null,
             'detail_tugas_email' => $this->request->getPost('detail_tugas_email'),
-            'id_website' => $this->request->getPost('id_website'),
+            'id_website' => $this->request->getPost('id_website') ?: null,
             'detail_tugas_website' => $this->request->getPost('detail_tugas_website'),
-            'id_wa' => $this->request->getPost('id_wa'),
+            'id_wa' => $this->request->getPost('id_wa') ?: null,
             'detail_tugas_wa' => $this->request->getPost('detail_tugas_wa')
         ];
 
@@ -131,8 +132,8 @@ class Jadwal extends BaseController
         $hari = $this->request->getPost('hari');
         $id_petugas = $this->request->getPost('id_petugas');
 
-        $query = $this->jadwal->select('jadwal_tugas.*, petugas.nama_petugas')
-                              ->join('petugas', 'petugas.id_petugas = jadwal_tugas.id_petugas', 'left');
+        $query = $this->jadwal->select('jadwal_tugas.*, data_petugas.nama_petugas')
+                              ->join('data_petugas', 'data_petugas.id_petugas = jadwal_tugas.id_petugas', 'left');
 
         if ($hari) {
             $query->where('hari_jadwal', $hari);
@@ -142,8 +143,21 @@ class Jadwal extends BaseController
             $query->where('jadwal_tugas.id_petugas', $id_petugas);
         }
 
+        $jadwal = $query->findAll();
+        
+        // Urutkan hasil filter
+        $hari_urut = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'];
+        usort($jadwal, function($a, $b) use ($hari_urut) {
+            $pos_a = array_search($a['hari_jadwal'], $hari_urut);
+            $pos_b = array_search($b['hari_jadwal'], $hari_urut);
+            if ($pos_a == $pos_b) {
+                return strtotime($a['jam_jadwal']) - strtotime($b['jam_jadwal']);
+            }
+            return $pos_a - $pos_b;
+        });
+
         $data = [
-            'jadwal' => $query->orderBy('hari_jadwal, jam_jadwal', 'ASC')->findAll(),
+            'jadwal' => $jadwal,
             'petugas' => $this->petugas->findAll()
         ];
 

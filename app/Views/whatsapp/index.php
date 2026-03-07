@@ -24,7 +24,7 @@
 <?php endif; ?>
 
 <!-- Section Data WhatsApp -->
-<div class="data-wa-section">
+<div class="data-akun-section">
     <!-- Header dengan Tombol Tambah -->
     <div class="section-header">
         <h3>
@@ -52,57 +52,45 @@
             </thead>
             <tbody>
                 <?php if (!empty($whatsapp) && is_array($whatsapp)): ?>
-<?php $no = 1; ?>
-<?php foreach ($whatsapp as $wa): ?>
-
-<tr>
-<td><strong><?= $no++ ?></strong></td>
-
-<td><?= $wa['id_wa'] ?></td>
-
-<td>
-<a href="https://wa.me/<?= $wa['no_wa'] ?>" target="_blank" style="color:#25D366;text-decoration:none;">
-<i class="fab fa-whatsapp" style="margin-right:5px;"></i>
-<?= $wa['no_wa'] ?>
-</a>
-</td>
-
-<td>
-<div class="action-buttons">
-
-<!-- Tombol Edit -->
-<a href="<?= base_url('whatsapp/edit/'.$wa['id_wa']); ?>" class="btn-edit">
-<i class="fas fa-edit"></i>
-Edit
-</a>
-
-<!-- Tombol Hapus -->
-<form action="<?= base_url('whatsapp/delete/'.$wa['id_wa']); ?>" method="post" style="display:inline;" onsubmit="return confirm('Yakin ingin menghapus data ini?')">
-<?= csrf_field() ?>
-
-<button type="submit" class="btn-hapus">
-<i class="fas fa-trash"></i>
-Hapus
-</button>
-
-</form>
-
-</div>
-</td>
-
-</tr>
-
-<?php endforeach; ?>
-<?php else: ?>
-
-<tr>
-<td colspan="4" style="text-align:center;padding:40px;color:#64748b;">
-<i class="fab fa-whatsapp" style="font-size:32px;display:block;margin-bottom:10px;"></i>
-Belum ada data akun WhatsApp
-</td>
-</tr>
-
-<?php endif; ?>
+                    <?php $no = 1; ?>
+                    <?php foreach ($whatsapp as $wa): ?>
+                    <tr>
+                        <td><strong><?= $no++ ?></strong></td>
+                        <td><?= $wa['id_wa'] ?></td>
+                        <td>
+                            <a href="https://wa.me/<?= $wa['no_wa'] ?>" target="_blank" style="color: #25D366; text-decoration: none;">
+                                <i class="fab fa-whatsapp" style="margin-right: 5px;"></i>
+                                <?= $wa['no_wa'] ?>
+                            </a>
+                        </td>
+                        <td>
+                            <div class="action-buttons">
+                                <!-- Tombol Edit -->
+                                <a href="<?= base_url('whatsapp/edit/'.$wa['id_wa']) ?>" class="btn-edit">
+                                    <i class="fas fa-edit"></i>
+                                    Edit
+                                </a>
+                                
+                                <!-- Tombol Hapus -->
+                                <form action="<?= base_url('whatsapp/delete/'.$wa['id_wa']) ?>" method="post" style="display: inline;" onsubmit="return confirm('Yakin ingin menghapus data ini?')">
+                                    <?= csrf_field() ?>
+                                    <button type="submit" class="btn-hapus">
+                                        <i class="fas fa-trash"></i>
+                                        Hapus
+                                    </button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <tr>
+                        <td colspan="4" style="text-align: center; padding: 40px; color: #64748b;">
+                            <i class="fab fa-whatsapp" style="font-size: 32px; display: block; margin-bottom: 10px;"></i>
+                            Belum ada data akun WhatsApp
+                        </td>
+                    </tr>
+                <?php endif; ?>
             </tbody>
         </table>
     </div>
@@ -111,7 +99,7 @@ Belum ada data akun WhatsApp
 <style>
 /* ===== TOMBOL TAMBAH ===== */
 .btn-tambah {
-    background: linear-gradient(135deg, #25D366, #128C7E);
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
     color: white;
     border: none;
     padding: 14px 32px;
@@ -123,7 +111,7 @@ Belum ada data akun WhatsApp
     align-items: center;
     gap: 10px;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 20px -4px rgba(37, 211, 102, 0.5);
+    box-shadow: 0 8px 20px -4px rgba(59, 130, 246, 0.5);
     text-decoration: none;
     position: relative;
     overflow: hidden;
@@ -143,7 +131,7 @@ Belum ada data akun WhatsApp
 
 .btn-tambah:hover {
     transform: translateY(-4px);
-    box-shadow: 0 15px 30px -4px rgba(37, 211, 102, 0.8);
+    box-shadow: 0 15px 30px -4px rgba(59, 130, 246, 0.8);
 }
 
 .btn-tambah:hover:before {

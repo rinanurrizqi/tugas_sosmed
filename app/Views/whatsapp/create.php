@@ -32,7 +32,7 @@
         <p>Silakan isi form di bawah ini untuk menambahkan akun WhatsApp baru</p>
     </div>
 
-    <form action="<?= base_url('whatsapp/save') ?>" method="post" class="styled-form">
+    <form action="<?= base_url('wa/save') ?>" method="post" class="styled-form">
         <?= csrf_field() ?>
         
        <div class="form-group">
@@ -68,190 +68,135 @@
 </div>
 
 <style>
-/* ===== FORM CONTAINER ===== */
-.form-container {
-    background: white;
-    border-radius: 24px;
-    padding: 40px;
-    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 0 auto;
-    border: 1px solid #e9ecef;
-    transition: all 0.3s ease;
-}
-
-.form-container:hover {
-    box-shadow: 0 30px 50px -10px rgba(0, 0, 0, 0.15);
+/* Hover effects untuk input */
+input:hover {
+    border-color: #60a5fa !important;
     transform: translateY(-2px);
 }
 
-.form-header {
-    text-align: center;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 2px dashed #e9ecef;
+input:focus {
+    outline: none !important;
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15) !important;
+    transform: translateY(-2px);
 }
 
-.form-header h3 {
-    color: #1e293b;
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.form-header h3 i {
-    color: #25D366;
-    margin-right: 10px;
-}
-
-.form-header p {
-    color: #64748b;
-    font-size: 16px;
-}
-
-/* ===== FORM GROUP ===== */
-.form-group {
-    margin-bottom: 30px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 12px;
-    color: #1e293b;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-}
-
-.form-group label i {
-    color: #25D366;
-    margin-right: 8px;
-    font-size: 18px;
-}
-
-.form-control {
-    width: 100%;
-    padding: 18px 22px;
-    border: 2px solid #e9ecef;
-    border-radius: 18px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    background: #f8fafc;
-    color: #1e293b;
-}
-
-.form-control:focus {
-    outline: none;
-    border-color: #25D366;
-    background: white;
-    box-shadow: 0 0 0 5px rgba(37, 211, 102, 0.1);
-    transform: scale(1.01);
-}
-
-.form-control.is-invalid {
-    border-color: #ef4444;
-    background: #fef2f2;
-}
-
-.form-text {
-    display: block;
-    margin-top: 12px;
-    font-size: 14px;
-    color: #64748b;
-    padding-left: 5px;
-}
-
-/* ===== FORM ACTIONS ===== */
-.form-actions {
-    display: flex;
-    gap: 15px;
-    margin-top: 40px;
-    justify-content: flex-end;
-}
-
+/* Tombol Simpan dengan efek - KHUSUS WHATSAPP */
 .btn-simpan {
-    background: linear-gradient(135deg, #25D366, #128C7E);
-    color: white;
-    border: none;
-    padding: 16px 40px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 20px -4px rgba(37, 211, 102, 0.5);
     position: relative;
     overflow: hidden;
+    background: linear-gradient(135deg, #25D366, #128C7E) !important;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5) !important;
 }
 
 .btn-simpan:before {
     content: '';
     position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: left 0.7s;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
     z-index: 1;
 }
 
 .btn-simpan:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 15px 30px -4px rgba(37, 211, 102, 0.8);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.8) !important;
+    background: linear-gradient(135deg, #128C7E, #075E54) !important;
 }
 
 .btn-simpan:hover:before {
-    left: 100%;
+    width: 400px;
+    height: 400px;
 }
 
-.btn-simpan i {
+/* Tombol Kembali dengan efek */
+.btn-kembali {
     position: relative;
-    z-index: 2;
-    font-size: 18px;
+    overflow: hidden;
 }
 
-.btn-batal {
-    background: #f1f5f9;
-    color: #64748b;
-    border: 2px solid #e9ecef;
-    padding: 16px 40px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    transition: all 0.3s ease;
-    text-decoration: none;
+.btn-kembali:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(59, 130, 246, 0.1);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+    z-index: 0;
 }
 
-.btn-batal:hover {
-    background: #e2e8f0;
-    color: #475569;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+.btn-kembali:hover {
+    border-color: #3b82f6 !important;
+    color: #3b82f6 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+    background: white !important;
 }
 
-/* Responsive */
+.btn-kembali:hover:before {
+    width: 400px;
+    height: 400px;
+}
+
+.btn-kembali:hover i {
+    transform: translateX(-3px);
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .form-container {
-        padding: 25px;
-        margin: 15px;
+        padding: 25px !important;
+        margin: 15px !important;
     }
     
-    .form-actions {
-        flex-direction: column-reverse;
+    .form-action-buttons {
+        flex-direction: column !important;
+        gap: 15px !important;
     }
     
     .btn-simpan,
-    .btn-batal {
-        width: 100%;
-        justify-content: center;
+    .btn-kembali {
+        width: 100% !important;
+        min-width: 100% !important;
+        padding: 14px 30px !important;
+        font-size: 15px !important;
+    }
+    
+    input {
+        padding: 14px 18px !important;
+    }
+    
+    input[type="url"] {
+        padding-left: 45px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px !important;
+    }
+    
+    h2 {
+        font-size: 18px !important;
+    }
+    
+    label {
+        font-size: 14px !important;
+    }
+    
+    .btn-simpan,
+    .btn-kembali {
+        padding: 12px 25px !important;
+        font-size: 14px !important;
     }
 }
 </style>

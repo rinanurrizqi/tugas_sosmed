@@ -36,7 +36,7 @@
         <p>Silakan ubah data akun WhatsApp di bawah ini</p>
     </div>
 
-    <form action="<?= base_url('whatsapp/update/'.$whatsapp['id_wa']) ?>" method="post" class="styled-form">
+    <form action="<?= base_url('wa/update/'.$whatsapp['id_wa']) ?>" method="post" class="styled-form">
         <?= csrf_field() ?>
         
        <div class="form-group">

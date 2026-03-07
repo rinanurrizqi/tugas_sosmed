@@ -1,126 +1,106 @@
 <?php
 
 namespace App\Controllers;
-
 use App\Models\WhatsappModel;
 
 class Whatsapp extends BaseController
 {
-    protected $whatsappModel;
-    
+    protected $whatsapp;
+
     public function __construct()
     {
-        $this->whatsappModel = new WhatsappModel();
+        $this->whatsapp = new WhatsappModel();
     }
-    
-    // Halaman index - menampilkan semua data
+
     public function index()
     {
-        $data = [
-            'title' => 'Data Akun WhatsApp',
-            'whatsapp' => $this->whatsappModel->getAllWa()
-        ];
-        
+        $data['whatsapp'] = $this->whatsapp->findAll();
         return view('whatsapp/index', $data);
     }
-    
-    // Halaman form tambah data
+
     public function create()
     {
-        $data = [
-            'title' => 'Tambah Akun WhatsApp',
-            'validation' => \Config\Services::validation()
-        ];
-        
-        return view('whatsapp/create', $data);
+        return view('whatsapp/form');
     }
-    
-   // Proses simpan data
-    public function save()
-{
-    // Validasi input
-    if (!$this->validate([
-        'no_wa' => [
-            'rules' => 'required|is_unique[akun_wa.no_wa]',
-            'errors' => [
-                'required' => 'Nomor WhatsApp harus diisi',
-                'is_unique' => 'Nomor WhatsApp ini sudah terdaftar'
+
+    public function store()
+    {
+        // Validasi
+        $rules = [
+            'id_wa' => [
+                'rules' => 'required|is_unique[akun_wa.id_wa]|min_length[3]|max_length[20]',
+                'errors' => [
+                    'required' => 'ID WhatsApp harus diisi',
+                    'is_unique' => 'ID WhatsApp sudah digunakan',
+                    'min_length' => 'ID WhatsApp minimal 3 karakter',
+                    'max_length' => 'ID WhatsApp maksimal 20 karakter'
+                ]
+            ],
+            'no_wa' => [
+                'rules' => 'required|min_length[10]|max_length[15]',
+                'errors' => [
+                    'required' => 'Nomor WhatsApp harus diisi',
+                    'min_length' => 'Nomor WhatsApp minimal 10 digit',
+                    'max_length' => 'Nomor WhatsApp maksimal 15 digit'
+                ]
             ]
-        ]
-    ])) {
-        return redirect()->back()->withInput()->with('error', 'Validasi gagal, periksa kembali input Anda');
+        ];
+
+        if (!$this->validate($rules)) {
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
+
+        // Simpan data
+        $this->whatsapp->save([
+            'id_wa'   => $this->request->getPost('id_wa'),
+            'no_wa' => $this->request->getPost('no_wa'),
+        ]);
+
+        session()->setFlashdata('success', 'Data akun WhatsApp berhasil ditambahkan');
+        return redirect()->to(base_url('whatsapp'));
     }
 
-    // Simpan data
-    $this->whatsappModel->save([
-        'no_wa' => $this->request->getVar('no_wa')
-    ]);
-
-    session()->setFlashdata('success', 'Data akun WhatsApp berhasil ditambahkan');
-    return redirect()->to('/whatsapp');
-}
-    
-    // Halaman form edit
-   public function edit($id)
-{
-    $model = new \App\Models\WhatsappModel();
-
-    $data['whatsapp'] = $model->getWaById($id);
-
-    if (!$data['whatsapp']) {
-        return redirect()->to('/whatsapp')->with('error', 'Data tidak ditemukan');
+    public function edit($id)
+    {
+        $data['whatsapp'] = $this->whatsapp->find($id);
+        
+        if (empty($data['whatsapp'])) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Data tidak ditemukan');
+        }
+        
+        return view('whatsapp/form', $data);
     }
 
-    return view('whatsapp/edit', $data);
-}
-    
-    // Proses update data
     public function update($id)
     {
-        // Cek data
-        $dataLama = $this->whatsappModel->getWaById($id);
-        
-        // Jika nomor berubah, validasi unique
-        $ruleLink = 'required|valid_url_strict';
-        if ($dataLama['no_wa'] != $this->request->getVar('no_wa')) {
-            $ruleLink .= '|is_unique[akun_wa.no_wa]';
-        }
-        
-        // Validasi input
-    if (!$this->validate([
-        'no_wa' => [
-            'rules' => 'required|is_unique[akun_wa.no_wa]',
-            'errors' => [
-                'required' => 'Nomor WhatsApp harus diisi',
-                'is_unique' => 'Nomor WhatsApp ini sudah terdaftar'
+        // Validasi
+        $rules = [
+            'no_wa' => [
+                'rules' => 'required|min_length[10]|max_length[15]',
+                'errors' => [
+                    'required' => 'Nomor WhatsApp harus diisi',
+                    'min_length' => 'Nomor WhatsApp minimal 10 digit',
+                    'max_length' => 'Nomor WhatsApp maksimal 15 digit'
+                ]
             ]
-        ]
-    ])) {
-        return redirect()->back()->withInput()->with('error', 'Validasi gagal, periksa kembali input Anda');
-    }
-        
-        // Update data
-        $this->whatsappModel->update($id, [
-            'no_wa' => $this->request->getVar('no_wa')
+        ];
+
+        if (!$this->validate($rules)) {
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
+
+        $this->whatsapp->update($id, [
+            'no_wa' => $this->request->getPost('no_wa')
         ]);
-        
+
         session()->setFlashdata('success', 'Data akun WhatsApp berhasil diupdate');
-        return redirect()->to('/whatsapp');
+        return redirect()->to(base_url('whatsapp'));
     }
-    
-    // Hapus data
+
     public function delete($id)
     {
-        // Cek data
-        $whatsapp = $this->whatsappModel->getWaById($id);
-        
-        if ($whatsapp) {
-            $this->whatsappModel->delete($id);
-            session()->setFlashdata('success', 'Data akun WhatsApp berhasil dihapus');
-        } else {
-            session()->setFlashdata('error', 'Data tidak ditemukan');
-        }
-        
-        return redirect()->to('/whatsapp');
+        $this->whatsapp->delete($id);
+        session()->setFlashdata('success', 'Data akun WhatsApp berhasil dihapus');
+        return redirect()->to(base_url('whatsapp'));
     }
 }

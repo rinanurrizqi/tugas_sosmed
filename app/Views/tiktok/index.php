@@ -1,6 +1,7 @@
 <?= $this->extend('layout/template') ?>
 <?= $this->section('content') ?>
 
+<!-- Topbar -->
 <div class="topbar">
     <h2>Data Akun TikTok</h2>
     <div class="topbar-user">
@@ -9,16 +10,36 @@
     </div>
 </div>
 
+<!-- Tampilkan Flash Messages -->
+<?php if (session()->getFlashdata('success')): ?>
+    <div style="background: #d4edda; color: #155724; padding: 15px 20px; border-radius: 10px; margin-bottom: 20px;">
+        <i class="fas fa-check-circle"></i> <?= session()->getFlashdata('success') ?>
+    </div>
+<?php endif; ?>
+
+<?php if (session()->getFlashdata('error')): ?>
+    <div style="background: #f8d7da; color: #721c24; padding: 15px 20px; border-radius: 10px; margin-bottom: 20px;">
+        <i class="fas fa-exclamation-circle"></i> <?= session()->getFlashdata('error') ?>
+    </div>
+<?php endif; ?>
+
+<!-- Section Data TikTok -->
 <div class="data-akun-section">
+    <!-- Header dengan Tombol Tambah -->
     <div class="section-header">
         <h3>
-            <i class="fab fa-tiktok"></i> Daftar Akun TikTok
+            <i class="fab fa-tiktok"></i>
+            Daftar Akun TikTok
         </h3>
+        
+        <!-- Tombol Tambah Akun (TANPA GARIS BAWAH) -->
         <a href="<?= base_url('tiktok/create') ?>" class="btn-tambah">
-            <i class="fas fa-plus"></i> Tambah Akun
+            <i class="fas fa-plus"></i>
+            Tambah Akun
         </a>
     </div>
 
+    <!-- Table Container -->
     <div class="table-container">
         <table>
             <thead>
@@ -44,14 +65,18 @@
                         </td>
                         <td>
                             <div class="action-buttons">
+                                <!-- Tombol Edit -->
                                 <a href="<?= base_url('tiktok/edit/'.$tt['id_tiktok']) ?>" class="btn-edit">
-                                    <i class="fas fa-edit"></i> Edit
+                                    <i class="fas fa-edit"></i>
+                                    Edit
                                 </a>
                                 
-                                <form action="<?= base_url('tiktok/delete/'.$tt['id_tiktok']) ?>" method="post" style="display: inline;" onsubmit="return confirm('Yakin ingin menghapus?')">
+                                <!-- Tombol Hapus -->
+                                <form action="<?= base_url('tiktok/delete/'.$tt['id_tiktok']) ?>" method="post" style="display: inline;" onsubmit="return confirm('Yakin ingin menghapus data ini?')">
                                     <?= csrf_field() ?>
                                     <button type="submit" class="btn-hapus">
-                                        <i class="fas fa-trash"></i> Hapus
+                                        <i class="fas fa-trash"></i>
+                                        Hapus
                                     </button>
                                 </form>
                             </div>
@@ -61,6 +86,7 @@
                 <?php else: ?>
                     <tr>
                         <td colspan="4" style="text-align: center; padding: 40px; color: #64748b;">
+                            <i class="fab fa-tiktok" style="font-size: 32px; display: block; margin-bottom: 10px;"></i>
                             Belum ada data akun TikTok
                         </td>
                     </tr>
@@ -71,7 +97,6 @@
 </div>
 
 <style>
-<<<<<<< HEAD
 /* ===== TOMBOL TAMBAH ===== */
 .btn-tambah {
     background: linear-gradient(135deg, #3b82f6, #1d4ed8);
@@ -279,9 +304,6 @@
         justify-content: center;
     }
 }
-=======
-    /* ... Copy paste saja bagian <style> dari Instagram index.php kamu ke sini ... */
->>>>>>> 2e03b5ccbb6126a85a2877f35182a61168b011f5
 </style>
 
 <?= $this->endSection() ?>
