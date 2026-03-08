@@ -51,16 +51,12 @@ class Tiktok extends BaseController
         }
 
         // Simpan data
-        try {
-            $this->tiktok->save([
-                'id_tiktok'   => $this->request->getPost('id_tiktok'),
-                'link_tiktok' => $this->request->getPost('link_tiktok'),
-            ]);
-            session()->setFlashdata('success', 'Data akun TikTok berhasil ditambahkan');
-        } catch (\Exception $e) {
-            session()->setFlashdata('error', 'Gagal menambahkan data: ' . $e->getMessage());
-        }
+        $this->tiktok->save([
+            'id_tiktok'   => $this->request->getPost('id_tiktok'),
+            'link_tiktok' => $this->request->getPost('link_tiktok')
+        ]);
 
+        session()->setFlashdata('success', 'Data akun TikTok berhasil ditambahkan');
         return redirect()->to(base_url('tiktok'));
     }
 
@@ -69,7 +65,8 @@ class Tiktok extends BaseController
         $data['tiktok'] = $this->tiktok->find($id);
         
         if (empty($data['tiktok'])) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Data tidak ditemukan');
+            session()->setFlashdata('error', 'Data tidak ditemukan');
+            return redirect()->to(base_url('tiktok'));
         }
         
         return view('tiktok/form', $data);
@@ -93,26 +90,19 @@ class Tiktok extends BaseController
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
-        try {
-            $this->tiktok->update($id, [
-                'link_tiktok' => $this->request->getPost('link_tiktok')
-            ]);
-            session()->setFlashdata('success', 'Data akun TikTok berhasil diupdate');
-        } catch (\Exception $e) {
-            session()->setFlashdata('error', 'Gagal mengupdate data: ' . $e->getMessage());
-        }
+        // Update data
+        $this->tiktok->update($id, [
+            'link_tiktok' => $this->request->getPost('link_tiktok')
+        ]);
 
+        session()->setFlashdata('success', 'Data akun TikTok berhasil diupdate');
         return redirect()->to(base_url('tiktok'));
     }
 
     public function delete($id)
     {
-        try {
-            $this->tiktok->delete($id);
-            session()->setFlashdata('success', 'Data akun TikTok berhasil dihapus');
-        } catch (\Exception $e) {
-            session()->setFlashdata('error', 'Gagal menghapus data: ' . $e->getMessage());
-        }
+        $this->tiktok->delete($id);
+        session()->setFlashdata('success', 'Data akun TikTok berhasil dihapus');
         return redirect()->to(base_url('tiktok'));
     }
 }

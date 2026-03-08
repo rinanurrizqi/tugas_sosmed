@@ -32,7 +32,7 @@
             Daftar Akun TikTok
         </h3>
         
-        <!-- Tombol Tambah Akun (TANPA GARIS BAWAH) -->
+        <!-- Tombol Tambah Akun -->
         <a href="<?= base_url('tiktok/create') ?>" class="btn-tambah">
             <i class="fas fa-plus"></i>
             Tambah Akun
@@ -70,7 +70,7 @@
                                     <i class="fas fa-edit"></i> Edit
                                 </a>
                                 
-                                <!-- Tombol Hapus - Gunakan POST -->
+                                <!-- Tombol Hapus -->
                                 <form action="<?= base_url('tiktok/delete/'.$tt['id_tiktok']) ?>" method="post" style="display: inline;" onsubmit="return confirm('Yakin ingin menghapus data ini?')">
                                     <?= csrf_field() ?>
                                     <button type="submit" class="btn-hapus">

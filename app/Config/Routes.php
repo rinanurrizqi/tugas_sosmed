@@ -58,8 +58,6 @@ $routes->post('tiktok/store',             'Tiktok::store');
 $routes->get('tiktok/edit/(:segment)',    'Tiktok::edit/$1');
 $routes->post('tiktok/update/(:segment)', 'Tiktok::update/$1');
 $routes->post('tiktok/delete/(:segment)', 'Tiktok::delete/$1');
-// Atau jika masih pakai GET untuk delete:
-$routes->get('tiktok/delete/(:segment)',  'Tiktok::delete/$1');
 
 // MASTER - EMAIL
 $routes->get('email',           'Email::index');
